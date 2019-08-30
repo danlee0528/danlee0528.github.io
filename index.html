@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="timeline.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Open+Sans|Neucha|Schoolbell&display=swap"
+        rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>Daniel's Website</title>
+</head>
+
+<body>
+    <!-- Welcome Section -->
+    <div class="row" id="welcome_page">
+        <a href="#about_row"><img src="/icons/down-arrow.png" alt="navigation" class="icons"
+                style="bottom: 5%; right: 3%; position: absolute;"></a>
+        <img id="menu_icon" src="/icons/menu_orange.png" alt="pointer" class="icons"
+            style="top:5%; right:3%; position: absolute; cursor:pointer;" onclick="openNav()">
+
+        <!-- Overlay Nav -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#about_row" onclick="closeNav()">
+                    <p class="navTexts">About</p>
+                </a>
+                <a href="#work_row" onclick="closeNav()">
+                    <p class="navTexts">Work</p>
+                </a>
+                <a href="#project_banner" onclick="closeNav()">
+                    <p class="navTexts">Projects</p>
+                </a>
+            </div>
+        </div>
+        <div class="hero-text">
+            <h1>I am Daniel Lee</h1>
+            <p>And I'm a <u>Developer</u>, Photographer, Musician, Artist, Athelete</p>
+            <button onclick="window.location.href = 'https://www.linkedin.com/in/danlee0528/';">Resume</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <div class="row" id="about_row" data-aos="fade">
+            <!-- Card -->
+            <div class="card mb-3" style="width: 100%;border: none;">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/images/lightbulbman.jpg" class="card-img" alt="me" id="me_image">
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="card-body" style="padding-left: 5%;">
+                            <h5 class="card-title">Optimism. Integrity. Initiative.</h5>
+                            <p class="card-text">
+                                Daniel is an aspiring developer, with experience leading and developing various projects
+                                – school and personal. His background in computer science, visual design, music, and
+                                sports inform him mindful but competitive approach to the way he develops applications.
+                                He is fueled by his passion for helping people with needs of technology and education.
+                                He considers himself a ‘humble learner’, always eager to learn new things and gives what
+                                he receives back to the community.
+                                <br><br> His hunger for knowledge and determination to turn information into action has
+                                contributed to his most recent position at Canadian Tire Corporation, where he analyzed
+                                the performance of internal applications to
+                                provide answers to unknown issues, and developed a license monitoring alert to help the
+                                company avoid unwanted penalties for license overages. Meanwhile, he improved the
+                                productivity of his team by assisting developers
+                                with testing automation scripts, processing tickets and managing several mini projects
+                                such as alert and dashboard naming standardization and managing KPI reports.
+                                <br><br> Daniel believes integrity in the workplace is key to success – listening to
+                                advices, developing good habits and executing new ideas. Daniel is currently in his
+                                final year of Computer Science degree and is ready
+                                to embrace a new challenge. Reach out to <strong>hla191@sfu.ca</strong> to connect!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SNS Links -->
+            <div class="mediaIcons_container">
+                <span
+                    style="padding-right: 1%;font-family: 'Schoolbell', cursive; font-size: 20px;vertical-align:middle">
+                    Stalk Me: </span>
+                <a href="https://www.instagram.com/danlee0528/ "><img class="mediaIcons " src="/icons/instagram.png "
+                        alt="instagram "></a>
+                <a href="https://www.facebook.com/daniel.lee.3591267 "><img class="mediaIcons "
+                        src="/icons/facebook.png " alt="facebook "></a>
+                <a href="https://github.com/danlee0528 "><img class="mediaIcons " src="/icons/github.png "
+                        alt="github "></a>
+                <a href="https://www.linkedin.com/in/danlee0528/ "><img class="mediaIcons " src="/icons/linkedin.png "
+                        alt="linkedin "></a>
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Work Section -->
+        <div class="row" id="work_row">
+            <h1 class="display-4" id="work_row_header">Timeline of My Journey</h1>
+
+            <div class="row" data-aos="fade" style="width:inherit; margin-left: 1px;">
+                <div class=" col-md-12 ">
+                    <div class="main-timeline4 ">
+                        <div class="timeline">
+                            <a href="https://www.linkedin.com/in/danlee0528/ " class="timeline-content ">
+                                <span class="year ">2019~</span>
+                                <div class="inner-content ">
+                                    <h3 class="title ">Coming Soon!</h3>
+                                    <p class="description ">
+                                        Where is the next stop going to be?
+                                        <br> I'm currently enrolled in the final year of my degree! Hire Me in advance!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="https://www.linkedin.com/in/danlee0528/ " class="timeline-content ">
+                                <span class="year ">2018</span>
+                                <div class="inner-content ">
+                                    <h3 class="title ">DevOps Support Analyst</h3>
+                                    <p class="description ">
+                                        From September 2018 to April 2019, I had my first internship at Canadian Tire
+                                        Corporation in Calgary, AB.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="https://www.sfu.ca " class="timeline-content ">
+                                <span class="year ">2016</span>
+                                <div class="inner-content ">
+                                    <h3 class="title ">Simon Fraser University</h3>
+                                    <p class="description ">
+                                        Depiste all the oddities and failures in the past, I worked my way to study
+                                        Computer Science bachelor's program for the future that yet to come!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#https://www.vcc.ca/programscourses/program-areas/university-transfer/software-systems-major-bachelor-of-applied-science---transfer-to-sfu/#progDescription "
+                                class="timeline-content ">
+                                <span class="year ">2015</span>
+                                <div class="inner-content ">
+                                    <h3 class="title ">Vancouver Community College</h3>
+                                    <p class="description ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus
+                                        sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Section -->
+        <div class="row" id="project_banner">
+            <h1 class="display-4 ">PROJECTS</h1>
+        </div>
+
+        <!-- Project Section -->
+        <div class="row" id="project_row">
+            <!-- first row card deck -->
+            <div class=".col-sm-12 .col-md-4 .col-lg-4 .col-xl-4" data-aos="fade">
+                <div class="card">
+                    <img src="images/database.png " class="card-img-top " alt="database " style="height:262px; ">
+                    <h5 class="card-title ">Airline Database System</h5>
+                    <div>
+                        <span class="languages ">Java</span>
+                        <span class="languages ">SQL</span>
+                    </div>
+                    <p class="card-text"> The program supports a friendly user interface to allow users to book a flight
+                        ticket and check flight schedules</p>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary "
+                            onclick="window.location.href='https://github.com/danlee0528/Airline-Database-System' ; ">View
+                            Source Code</button>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="images/threads.jpg " class="card-img-top " alt="threads " style="height:262px; ">
+                    <h5 class="card-title ">Boundded-Buffer Problem</h5>
+                    <div>
+                        <span class="languages ">C</span>
+                    </div>
+                    <p class="card-text ">A program that applies POXIS threads to solve deadlocks in multithreading with
+                        mutexes and semaphores</p>
+                    <div class="card-footer ">
+                        <button type="button " class="btn btn-primary "
+                            onclick="window.location.href='https://github.com/danlee0528/producer-consumer-problem' ; ">View
+                            Source Code</button>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="/images/tictactoe.jpg " class="card-img-top " alt="tictactoe " style="height:262px; ">
+                    <h5 class="card-title ">Real-time Tic-Tac-Toe</h5>
+                    <div>
+                        <span class="languages ">HTML5</span>
+                        <span class="languages ">CSS3</span>
+                        <span class="languages ">JavaScript</span>
+                        <span class="languages ">MongoDB</span>
+                    </div>
+                    <p class="card-text ">A web application that utlizes JSON and socket.io to store/retrieve statistics
+                        and support gameplay between users</p>
+
+                    <div class="card-footer ">
+                        <button type="button " class="btn btn-primary "
+                            onclick="window.location.href='https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application' ; ">View
+                            Source Code</button>
+                    </div>
+                </div>
+                 <div class="card">
+                    <img src="/images/puzzle.jpg " class="card-img-top " alt="puzzle " style="height:262px; ">
+                    <h5 class="card-title ">Web Puzzle Game</h5>
+                    <div>
+                        <span class="languages ">HTML5</span>
+                        <span class="languages ">CSS3</span>
+                        <span class="languages ">JavaScript</span>
+                    </div>
+                    <p class="card-text ">A client-side puzzle game where a user can guess the pre-defined set of
+                        puzzles</p>
+
+                    <div class="card-footer ">
+                        <button type="button " class="btn btn-primary "
+                            onclick="window.location.href='https://github.com/danlee0528/Web-Puzzle-Application' ; ">View
+                            Source Code</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="/images/ai.jpg " class="card-img-top " alt="ai " style="height:262px; ">
+                    <h5 class="card-title ">AI Tic-Tac-Toe Player</h5>
+                    <div>
+                        <span class="languages ">Python</span>
+                    </div>
+                    <p class="card-text ">AI player makes each move with pure Monte Carlo Tree Search Algorithm</p>
+
+                    <div class="card-footer ">
+                        <button type="button " class="btn btn-primary "
+                            onclick="window.location.href='https://github.com/danlee0528/Tic-Tac-Toe-pMCTS' ; ">View
+                            Source Code</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/rgb.jpg " class="card-img-top " alt="rgb " style="height:262px; ">
+                    <h5 class="card-title ">Simple Image Filter</h5>
+                    <div>
+                        <span class="languages ">Java</span>
+                    </div>
+                    <p class="card-text ">A simple image filter that allows RGB colour alteration, grey scale and more
+                    </p>
+
+                    <div class="card-footer ">
+                        <button type="button " class="btn btn-primary "
+                            onclick="window.location.href='https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application' ; ">View
+                            Source Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            duration: 1000,
+            delay: 300,
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>
