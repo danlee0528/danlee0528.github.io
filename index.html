@@ -23,7 +23,7 @@
 <body>
     <!-- Welcome Section -->
 
-    <div class="row" id="welcome_page">
+    <div class="container-fluid" id="welcome_page">
         <a href="#about_row"><img src="/icons/down-arrow.png" alt="navigation" class="icons"
                 style="bottom: 5%; right: 3%; position: absolute;"></a>
         <img id="menu_icon" src="/icons/menu_orange.png" alt="pointer" class="icons"
@@ -44,14 +44,14 @@
                 </a>
             </div>
         </div>
-        <div class="hero-text" id = "header_texts">
-            <h1 id = "header_name">Hi, I am Daniel Lee</h1>
-            <p id = "header_subtext">And I'm a <u>Developer</u>, Photographer, Musician, Artist, Athelete</p>
+        <div class="hero-text" id="header_texts">
+            <h1 id="header_name">Hi, I am Daniel Lee</h1>
+            <p id="header_subtext">And I'm a <u>Developer</u>, Photographer, Musician, Artist, Athelete</p>
             <button onclick="window.location.href = 'https://www.linkedin.com/in/danlee0528/';">Resume</button>
         </div>
     </div>
-    <div class="container">
 
+    <div class="container">
         <!-- About Section -->
         <div class="row" id="about_row" data-aos="fade">
             <!-- Card -->
@@ -62,13 +62,14 @@
                     </div>
                     <div class="col-xl-8">
                         <div class="card-body" style="padding-left: 5%;">
-                            <h5 class="card-title" class = "about_me_title">Optimism. Integrity. Initiative.</h5>
+                            <h5 class="card-title" class="about_me_title">Optimism. Integrity. Initiative.</h5>
                             <p class="card-text">
                                 Daniel is an aspiring developer, with experience leading and developing various projects
                                 – school and personal. His backgrounds in computer science, visual design, music, and
                                 sports inform him mindful but competitive approach to the way he develops applications.
                                 He is fueled by his passion for helping people with needs of technology and education.
-                                Daniel considers himself a ‘humble learner’, always eager to learn new things and gives what
+                                Daniel considers himself a ‘humble learner’, always eager to learn new things and gives
+                                what
                                 he receives back to the community.
                                 <br><br> His hunger for knowledge and determination to turn information into action has
                                 contributed to his most recent position at Canadian Tire Corporation, where he analyzed
@@ -108,7 +109,7 @@
 
         <!-- Work Section -->
         <div class="row" id="work_row">
-            <h1 class="display-4" id="work_row_header">Timeline of My Journey</h1>
+            <h1 class="display-4" id="work_row_header" data-aos="fade">Timeline of My Journey</h1>
 
             <div class="row" data-aos="fade" style="width:inherit; margin-left: 1px;">
                 <div class=" col-md-12 ">
@@ -119,8 +120,8 @@
                                 <div class="inner-content ">
                                     <h3 class="title ">Coming Soon!</h3>
                                     <p class="description ">
-                                        Where is the next stop going to be?
-                                        <br> I'm currently enrolled in the final year of my degree! Hire Me in advance!
+                                        Who knows where the next stop is going to be?
+                                        I'm currently enrolled in the final year of my degree! Hire Me in advance!
                                     </p>
                                 </div>
                             </a>
@@ -156,8 +157,7 @@
                                 <div class="inner-content ">
                                     <h3 class="title ">Vancouver Community College</h3>
                                     <p class="description ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus
-                                        sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                        I was enrolled in their Software System Major University Transfer program.
                                     </p>
                                 </div>
                             </a>
@@ -166,115 +166,116 @@
                 </div>
             </div>
         </div>
-        <!--  Tech Section -->
-        <div class="row" id="project_banner">
-            <h1 class="display-4 ">PROJECTS</h1>
-        </div>
+    </div>
 
-        <!-- Project Section -->
-        <div class="row" id="project_row">
-            <!-- first row card deck -->
-            <div class=".col-sm-12 .col-md-4 .col-lg-4 .col-xl-4" data-aos="fade">
-                <div class="card">
-                    <img src="images/database.png " class="card-img-top " alt="database " style="height:262px; ">
-                    <h5 class="card-title ">Airline Database System</h5>
-                    <div>
-                        <span class="languages ">Java</span>
-                        <span class="languages ">SQL</span>
-                    </div>
-                    <p class="card-text"> A program that allows users to book a flight and check their flight schedules with a friendly-designed user interface 
-                        ticket and check flight schedules</p>
-                    <div class="card-footer">
-                        <button type="button" class="btn btn-primary "
-                            onclick="window.location.href='https://github.com/danlee0528/Airline-Database-System' ; ">View
-                            Source Code</button>
-                    </div>
+    <!--  Tech Section -->
+    <div class="container-fluid" id="project_banner">
+        <h1 class="display-4">PROJECTS</h1>
+    </div>
 
+    <!-- Project Section -->
+    <div class="container-fluid" id="project_row">
+        <div class="card-deck" data-aos="fade">
+            <div class="card">
+                <img src="images/database.png " class="card-img-top " alt="database " style="height:262px; ">
+                <h5 class="card-title">Airline Database System</h5>
+                <div>
+                    <span class="languages ">Java</span>
+                    <span class="languages ">SQL</span>
                 </div>
-                <div class="card">
-                    <img src="images/threads.jpg " class="card-img-top " alt="threads " style="height:262px; ">
-                    <h5 class="card-title ">Bounded-Buffer Problem</h5>
-                    <div>
-                        <span class="languages ">C</span>
-                    </div>
-                    <p class="card-text ">A program that applies POXIS threads to solve deadlocks in multithreading with
-                        mutexes and semaphores</p>
-                    <div class="card-footer ">
-                        <button type="button " class="btn btn-primary "
-                            onclick="window.location.href='https://github.com/danlee0528/producer-consumer-problem' ; ">View
-                            Source Code</button>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <img src="/images/tictactoe.jpg " class="card-img-top " alt="tictactoe " style="height:262px; ">
-                    <h5 class="card-title ">Real-time Tic-Tac-Toe</h5>
-                    <div>
-                        <span class="languages ">HTML5</span>
-                        <span class="languages ">CSS3</span>
-                        <span class="languages ">JavaScript</span>
-                        <span class="languages ">MongoDB</span>
-                    </div>
-                    <p class="card-text ">A web application that utlizes JSON and socket.io to store/retrieve statistics
-                        and support gameplay between users</p>
-
-                    <div class="card-footer ">
-                        <button type="button " class="btn btn-primary "
-                            onclick="window.location.href='https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application' ; ">View
-                            Source Code</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/images/puzzle.jpg " class="card-img-top " alt="puzzle " style="height:262px; ">
-                    <h5 class="card-title ">Web Puzzle Game</h5>
-                    <div>
-                        <span class="languages ">HTML5</span>
-                        <span class="languages ">CSS3</span>
-                        <span class="languages ">JavaScript</span>
-                    </div>
-                    <p class="card-text ">A client-side puzzle game where a user can guess the pre-defined set of
-                        puzzles</p>
-
-                    <div class="card-footer ">
-                        <button type="button " class="btn btn-primary "
-                            onclick="window.location.href='https://github.com/danlee0528/Web-Puzzle-Application' ; ">View
-                            Source Code</button>
-                    </div>
+                <p class="card-text"> A program that allows users to book a flight and check their flight schedules with
+                    a
+                    friendly-designed user interface
+                    ticket and check flight schedules</p>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary "
+                        onclick="window.location.href='https://github.com/danlee0528/Airline-Database-System' ; ">View
+                        Source Code</button>
                 </div>
 
-                <div class="card">
-                    <img src="/images/ai.jpg " class="card-img-top " alt="ai " style="height:262px; ">
-                    <h5 class="card-title ">AI Tic-Tac-Toe Player</h5>
-                    <div>
-                        <span class="languages ">Python</span>
-                    </div>
-                    <p class="card-text ">AI player makes each move with pure Monte Carlo Tree Search Algorithm</p>
-
-                    <div class="card-footer ">
-                        <button type="button " class="btn btn-primary "
-                            onclick="window.location.href='https://github.com/danlee0528/Tic-Tac-Toe-pMCTS' ; ">View
-                            Source Code</button>
-                    </div>
+            </div>
+            <div class="card">
+                <img src="images/threads.jpg " class="card-img-top " alt="threads " style="height:262px; ">
+                <h5 class="card-title">Bounded-Buffer Problem</h5>
+                <div>
+                    <span class="languages ">C</span>
+                </div>
+                <p class="card-text">A program that applies POXIS threads to solve deadlocks in multithreading with
+                    mutexes and semaphores</p>
+                <div class="card-footer ">
+                    <button type="button " class="btn btn-primary "
+                        onclick="window.location.href='https://github.com/danlee0528/producer-consumer-problem' ; ">View
+                        Source Code</button>
                 </div>
 
-                <div class="card">
-                    <img src="/images/rgb.jpg " class="card-img-top " alt="rgb " style="height:262px; ">
-                    <h5 class="card-title ">Simple Image Filter</h5>
-                    <div>
-                        <span class="languages ">Java</span>
-                    </div>
-                    <p class="card-text ">A simple image filter that allows RGB colour alteration, grey scale and more
-                    </p>
+            </div>
+            <div class="card">
+                <img src="/images/tictactoe.jpg " class="card-img-top " alt="tictactoe " style="height:262px; ">
+                <h5 class="card-title">Real-time Tic-Tac-Toe</h5>
+                <div>
+                    <span class="languages ">HTML5</span>
+                    <span class="languages ">CSS3</span>
+                    <span class="languages ">JavaScript</span>
+                    <span class="languages ">MongoDB</span>
+                </div>
+                <p class="card-text">A web application that utlizes JSON and socket.io to store/retrieve statistics
+                    and support gameplay between users</p>
 
-                    <div class="card-footer ">
-                        <button type="button " class="btn btn-primary "
-                            onclick="window.location.href='https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application' ; ">View
-                            Source Code</button>
-                    </div>
+                <div class="card-footer ">
+                    <button type="button " class="btn btn-primary "
+                        onclick="window.location.href='https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application' ; ">View
+                        Source Code</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/puzzle.jpg " class="card-img-top " alt="puzzle " style="height:262px; ">
+                <h5 class="card-title">Web Puzzle Game</h5>
+                <div>
+                    <span class="languages ">HTML5</span>
+                    <span class="languages ">CSS3</span>
+                    <span class="languages ">JavaScript</span>
+                </div>
+                <p class="card-text">A client-side puzzle game where a user can guess the pre-defined set of
+                    puzzles</p>
+
+                <div class="card-footer ">
+                    <button type="button " class="btn btn-primary "
+                        onclick="window.location.href='https://github.com/danlee0528/Web-Puzzle-Application' ; ">View
+                        Source Code</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/ai.jpg " class="card-img-top " alt="ai " style="height:262px; ">
+                <h5 class="card-title">AI Tic-Tac-Toe Player</h5>
+                <div>
+                    <span class="languages ">Python</span>
+                </div>
+                <p class="card-text">AI player makes each move with pure Monte Carlo Tree Search Algorithm</p>
+
+                <div class="card-footer ">
+                    <button type="button " class="btn btn-primary "
+                        onclick="window.location.href='https://github.com/danlee0528/Tic-Tac-Toe-pMCTS' ; ">View
+                        Source Code</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/rgb.jpg " class="card-img-top " alt="rgb " style="height:262px; ">
+                <h5 class="card-title">Simple Image Filter</h5>
+                <div>
+                    <span class="languages ">Java</span>
+                </div>
+                <p class="card-text">A simple image filter that allows RGB colour alteration, grey scale and more
+                </p>
+
+                <div class="card-footer ">
+                    <button type="button " class="btn btn-primary "
+                        onclick="window.location.href='https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application' ; ">View
+                        Source Code</button>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
