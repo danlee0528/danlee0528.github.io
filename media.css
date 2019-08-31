@@ -4,7 +4,16 @@ No media query for `xs` since this is the default in Bootstrap
 */
 
  /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px), (max-width: 576px){    
+@media (max-width: 576px){    
+    #header_name{
+        font-size: 20px;
+    }
+    #header_subtext{
+        font-size: 12px;
+    }
+    .about_me_title{
+        text-align: center;
+    }
     .hero-text{
         font-size: 18px;
     }
@@ -16,9 +25,7 @@ No media query for `xs` since this is the default in Bootstrap
     #about_row, #work_row, #project_row{
         margin-left: 2px;
     }
-    #me_image{
-        padding-left: 10%;
-    }
+
     #project_banner{
         width: 100%;
     }
@@ -67,7 +74,14 @@ No media query for `xs` since this is the default in Bootstrap
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px), (max-width: 768px){
+@media (max-width: 768px){
+    #header_name{
+        font-size: 60px;
+    }
+    #header_subtext{
+        font-size: 20px;
+    }
+   
     #project_row{
         /* border: 1px blue solid; */
         justify-content: center;
@@ -78,13 +92,25 @@ No media query for `xs` since this is the default in Bootstrap
         display: inline-flex;
         text-align: center;
     }
+    .about_me_title{
+        text-align: center;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px), (max-width: 992px) {
+@media (min-width: 992px) {
+    #header_name{
+        font-size: 110px;
+    }
+    #header_subtext{
+        font-size: 20px;
+    }
     #project_row{
         /* border: 1px pink solid; */
         justify-content: center;
+    }
+    .about_me_title{
+        text-align: center;
     }
 
     #project_row .card{

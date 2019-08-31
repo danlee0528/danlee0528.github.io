@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="timeline.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="media.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Open+Sans|Neucha|Schoolbell&display=swap"
@@ -22,7 +22,7 @@
 
 <body>
     <!-- Welcome Section -->
-    
+
     <div class="row" id="welcome_page">
         <a href="#about_row"><img src="/icons/down-arrow.png" alt="navigation" class="icons"
                 style="bottom: 5%; right: 3%; position: absolute;"></a>
@@ -44,9 +44,9 @@
                 </a>
             </div>
         </div>
-        <div class="hero-text">
-            <h1>I am Daniel Lee</h1>
-            <p>And I'm a <u>Developer</u>, Photographer, Musician, Artist, Athelete</p>
+        <div class="hero-text" id = "header_texts">
+            <h1 id = "header_name">I am Daniel Lee</h1>
+            <p id = "header_subtext">And I'm a <u>Developer</u>, Photographer, Musician, Artist, Athelete</p>
             <button onclick="window.location.href = 'https://www.linkedin.com/in/danlee0528/';">Resume</button>
         </div>
     </div>
@@ -62,10 +62,10 @@
                     </div>
                     <div class="col-xl-8">
                         <div class="card-body" style="padding-left: 5%;">
-                            <h5 class="card-title">Optimism. Integrity. Initiative.</h5>
+                            <h5 class="card-title" class = "about_me_title">Optimism. Integrity. Initiative.</h5>
                             <p class="card-text">
                                 Daniel is an aspiring developer, with experience leading and developing various projects
-                                – school and personal. His background in computer science, visual design, music, and
+                                – school and personal. His backgrounds in computer science, visual design, music, and
                                 sports inform him mindful but competitive approach to the way he develops applications.
                                 He is fueled by his passion for helping people with needs of technology and education.
                                 He considers himself a ‘humble learner’, always eager to learn new things and gives what
@@ -166,8 +166,8 @@
                 </div>
             </div>
         </div>
-<!--  Tech Section -->
-        <div class="" id="project_banner">
+        <!--  Tech Section -->
+        <div class="row" id="project_banner">
             <h1 class="display-4 ">PROJECTS</h1>
         </div>
 
@@ -193,7 +193,7 @@
                 </div>
                 <div class="card">
                     <img src="images/threads.jpg " class="card-img-top " alt="threads " style="height:262px; ">
-                    <h5 class="card-title ">Boundded-Buffer Problem</h5>
+                    <h5 class="card-title ">Bounded-Buffer Problem</h5>
                     <div>
                         <span class="languages ">C</span>
                     </div>
@@ -224,7 +224,7 @@
                             Source Code</button>
                     </div>
                 </div>
-                 <div class="card">
+                <div class="card">
                     <img src="/images/puzzle.jpg " class="card-img-top " alt="puzzle " style="height:262px; ">
                     <h5 class="card-title ">Web Puzzle Game</h5>
                     <div>
@@ -241,7 +241,7 @@
                             Source Code</button>
                     </div>
                 </div>
-                
+
                 <div class="card">
                     <img src="/images/ai.jpg " class="card-img-top " alt="ai " style="height:262px; ">
                     <h5 class="card-title ">AI Tic-Tac-Toe Player</h5>
