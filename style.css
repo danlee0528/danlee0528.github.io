@@ -34,6 +34,13 @@ html {
     background-size: cover;
 }
 
+#header_name{
+    font-size: 20px;
+}
+#header_subtext{
+    font-size: 20px;
+}
+
 .icons {
     height: 60px;
     width: 60px;

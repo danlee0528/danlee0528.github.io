@@ -2,14 +2,23 @@
 Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap 
 */
-
- /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px){    
+@media (max-width: 575px){
     #header_name{
         font-size: 20px;
     }
     #header_subtext{
-        font-size: 12px;
+        font-size: 5px;
+    }
+   
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px){    
+    #header_name{
+        font-size: 10px;
+    }
+    #header_subtext{
+        font-size: 5px;
     }
     .about_me_title{
         text-align: center;
@@ -74,12 +83,12 @@ No media query for `xs` since this is the default in Bootstrap
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px){
+@media (min-width: 768px), (max-width: 991px){
     #header_name{
-        font-size: 60px;
+        font-size: 40px;
     }
     #header_subtext{
-        font-size: 20px;
+        font-size: 15px;
     }
    
     #project_row{
@@ -100,7 +109,7 @@ No media query for `xs` since this is the default in Bootstrap
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     #header_name{
-        font-size: 110px;
+        font-size: 80px;
     }
     #header_subtext{
         font-size: 20px;
