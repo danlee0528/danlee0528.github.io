@@ -1,7 +1,3 @@
-/* 
-Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap 
-*/
 @media (max-width: 575px){
     #header_name{
         font-size: 20px;
@@ -9,7 +5,49 @@ No media query for `xs` since this is the default in Bootstrap
     #header_subtext{
         font-size: 5px;
     }
-   
+    #about_row{
+        justify-content: center;
+        margin-left: 2px;
+    }
+
+    #about_row .card-title{
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    #about_row .card-text{
+        font-size: 12px;
+    }
+
+    #work_row_header{
+        font-size: 30px;
+    }
+    .main-timeline4:before {
+        margin-left: 12px;
+    }
+
+    #project_row{
+        justify-content: center;
+    }
+
+    #project_row .card{
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        width: 200px;
+        display: inline-flex;
+    }
+    #project_row .card-title{
+        font-size: 25px;
+    }
+
+    #project_row .card-text{
+        font-size: 12px;
+    }
+    #project_row button{
+        font-size: 15px;
+    }
 }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -20,7 +58,7 @@ No media query for `xs` since this is the default in Bootstrap
     #header_subtext{
         font-size: 5px;
     }
-    .about_me_title{
+    #about_row .card-title{
         text-align: center;
     }
     .hero-text{
