@@ -1,4 +1,9 @@
-@media (max-width: 575px){
+@media (max-width: 575px), (min-width: 425px){
+    html,body{
+        margin:0;
+        padding:0;
+    }
+
     #header_name{
         font-size: 20px;
     }
@@ -19,7 +24,9 @@
     #about_row .card-text{
         font-size: 12px;
     }
-
+    #work_row{
+        margin-left: 2px;
+    }
     #work_row_header{
         font-size: 30px;
     }
@@ -28,25 +35,41 @@
     }
 
     #project_row{
-        justify-content: center;
+        text-align: center;
+        margin-left: 0.5px;
     }
 
     #project_row .card{
         text-align: center;
         margin-bottom: 30px;
         padding-bottom: 10px;
-        width: 200px;
-        display: inline-flex;
+        display: inline-block;
+    }
+    #project_row .card-img-top {
+        width: 100%;
     }
     #project_row .card-title{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #project_row .card-text{
+        text-align: center;
         font-size: 12px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
     #project_row button{
-        font-size: 15px;
+        font-size: 12px;
+    }
+    .languages{
+        font-size: 12px;
+    }
+    #project_banner>h1{
+        vertical-align: middle;
+        text-align: center;
+    }
+    #project_banner>h1{
+        font-size: 70px;
     }
 }
 
@@ -139,9 +162,18 @@
         display: inline-flex;
         text-align: center;
     }
+    #project_row .card-text{
+        font-size: 16px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .about_me_title{
         text-align: center;
     }
+    #about_row .card-text{
+        font-size: 16px;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -165,4 +197,47 @@
         display: inline-flex;
         text-align: center;
     }
+    
+    #about_row .card-title {
+        font-size: 40px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: left;
+    }
+    
+    #about_row .card-text {
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+#project_row .card {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#project_row h5 {
+    font-size: 26px;
+    font-weight: bolder;
+    color: #555;
+    padding-top: 6%;
+    padding-bottom: 2%;
+}
+
+.languages {
+    background: rgba(0, 0, 0, 0.685);
+    color: white;
+    width: fit-content;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 50% 20% / 10% 40%;
+    font-size: 14px;
+}
+
+#project_row .card-text {
+    margin-top: 7%;
+    color: black;
+    font-size: 16px;
+}
  }
