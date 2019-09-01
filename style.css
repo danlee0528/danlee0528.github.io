@@ -254,6 +254,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
  
 /* Small devices (landscape phones, 576px and down) */
 @media screen and (max-width: 575px) {  
+    .row{
+        /* border: 2px solid green; */
+    }
     #header_name{
         /* color: yellow; */
         font-size: 30px;
@@ -270,8 +273,35 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
     #me_image{
         width: 80%;
-        margin-left: 12%;
+        margin-left: 10%;
     }
+    #about_row{
+        border: 2px solid black;
+        margin-left: 1px;
+    }
+
+    #work_row{
+        margin-left: 1px;
+        /* border: 2px solid black; */
+    }
+
+    .main-timeline4:before{
+        margin-left: 12px;
+    }
+
+    #project_row .card{
+        margin-left: 30px;
+        width: 340px;
+        height: auto;
+    }
+    #project_row .card-title{
+        font-size: 20px;
+    }
+    #project_row .card-text, #project_row button, .languages{
+        font-size: 12px;
+    }
+
+    
 }
  
 /* Medium devices (tablets, 768px and down) The navbar toggle appears at this breakpoint */
