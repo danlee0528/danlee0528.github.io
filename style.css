@@ -276,8 +276,42 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin-left: 10%;
     }
     #about_row{
-        border: 2px solid black;
+        /* border: 2px solid black; */
         margin-left: 1px;
+    }
+
+    #abour_row .card-text{
+        font-size: 10px;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 50px;
+        color: #fff;
+        display: block;
+        transition: .3s;
+    }
+    
+    .overlay a:hover {
+        color: #f3d552;
+        font-size: 40px;
+        text-decoration: none;
+    }
+    
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 30px;
     }
 
     #work_row{
@@ -287,6 +321,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     .main-timeline4:before{
         margin-left: 12px;
+    }
+
+    #project_banner h1{
+        font-size: 60px;
     }
 
     #project_row .card{
