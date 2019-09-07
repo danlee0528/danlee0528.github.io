@@ -3,8 +3,7 @@ body {
   overflow-y: scroll;
 }
 
-body,
-html {
+body, html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -18,8 +17,7 @@ html {
 }
 
 #welcome_page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/main-page-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.377)), url(/images/main-page-image.jpg);
   min-height: 100%;
   height: auto;
   max-width: 100%;
@@ -110,6 +108,7 @@ html {
   display: inline-block;
   padding: 8px 20px;
   margin-top: 10px;
+  border-radius: 15px 50px;
   background-color: rgba(228, 59, 59, 0.815);
   color: rgb(248, 248, 248);
   text-align: center;
@@ -152,8 +151,7 @@ html {
   opacity: 1;
 }
 
-#about_row_header,
-#work_row_header {
+#about_row_header, #work_row_header {
   text-align: center;
   width: 100%;
   font-family: "Neucha", cursive;
@@ -168,7 +166,7 @@ html {
   padding-bottom: 3%;
 }
 
-#work_row > .row {
+#work_row>.row {
   padding-bottom: 8%;
 }
 
@@ -180,8 +178,7 @@ html {
 }
 
 #project_banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/tech_background.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/tech_background.png);
   height: 200px;
   background-attachment: fixed;
   background-position: center;
@@ -189,7 +186,7 @@ html {
   background-size: cover;
 }
 
-#project_banner > h1 {
+#project_banner>h1 {
   color: white;
   font-size: 80px;
   text-align: center;
@@ -237,7 +234,7 @@ html {
   border: none;
 }
 
-.card-footer > button:hover {
+.card-footer>button:hover {
   background-color: black;
   color: white;
 }
@@ -268,12 +265,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* color: yellow; */
     font-size: 30px;
   }
-  #header_subtext,
-  .hero-text {
+  #header_subtext, .hero-text {
     font-size: 10px;
   }
-  #about_row_header,
-  #work_row_header {
+  #about_row_header, #work_row_header {
     font-size: 30px;
     text-align: center;
     width: 100%;
@@ -281,8 +276,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     padding: 4%;
   }
   #me_image {
-    width: 80%;
-    margin-left: 10%;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: -7%;
+    margin-bottom: 2%;
   }
   #about_row {
     /* border: 2px solid black; */
@@ -335,9 +333,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #project_row .card-title {
     font-size: 20px;
   }
-  #project_row .card-text,
-  #project_row button,
-  .languages {
+  #project_row .card-text, #project_row button, .languages {
     font-size: 12px;
   }
 }
@@ -349,17 +345,22 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* color: orange; */
     font-size: 40px;
   }
-  #header_subtext,
-  .hero-text {
+  #header_subtext, .hero-text {
     font-size: 13px;
   }
-  #about_row_header,
-  #work_row_header {
+  #about_row_header, #work_row_header {
     font-size: 40px;
     text-align: center;
     width: 100%;
     font-family: "Neucha", cursive;
     padding: 4%;
+  }
+  #me_image {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: -7%;
+    margin-bottom: 2%;
   }
 }
 
@@ -370,13 +371,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* color: green; */
     font-size: 51px;
   }
-  #header_subtext,
-  .hero-text {
+  #header_subtext, .hero-text {
     font-size: 16px;
   }
   #me_image {
-    width: 70%;
-    margin-left: 16%;
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: -7%;
+    margin-bottom: 2%;
   }
   #about_row .card-title {
     font-size: 28px;
@@ -390,16 +393,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #header_name {
     font-size: 60px;
   }
-  #header_subtext,
-  .hero-text {
+  #header_subtext, .hero-text {
     font-size: 18px;
   }
   .hero-text button {
     padding: 6px 15px;
   }
   #me_image {
-    width: 80%;
-    margin-left: 12%;
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: -7%;
+    margin-bottom: 2%;
   }
   #about_row .card-title {
     font-size: 30px;
@@ -410,7 +415,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* typewriter effect */
 
 #header_subtext {
-  color: rgb(255, 187, 0);
+  color: rgb(251, 255, 20);
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid rgb(252, 184, 83);
@@ -438,8 +443,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* The typewriter cursor effect */
 
 @keyframes blink-caret {
-  from,
-  to {
+  from, to {
     border-color: transparent;
   }
   50% {
