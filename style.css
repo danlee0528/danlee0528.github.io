@@ -214,6 +214,10 @@ body, html {
   height: auto;
 }
 
+#project_row .card-body {
+  height: auto;
+}
+
 #project_row .card-title {
   font-size: 26px;
   font-weight: bolder;
@@ -223,15 +227,21 @@ body, html {
 }
 
 #project_row .card-text {
-  margin-top: 7%;
+  padding-top: 10%;
+  padding-bottom: 20%;
   color: black;
   padding-left: 2%;
   padding-right: 2%;
+  width: 100%;
 }
 
 .card .card-footer {
   background-color: #fff;
-  border: none;
+  border: 1px solid red;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+  position: absolute;
 }
 
 .card-footer>button:hover {
