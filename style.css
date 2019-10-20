@@ -3,7 +3,8 @@ body {
   overflow-y: scroll;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -17,7 +18,8 @@ body, html {
 }
 
 #welcome_page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.377)), url(/images/main-page-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.377)),
+    url(/images/main-page-image.jpg);
   min-height: 100%;
   height: auto;
   max-width: 100%;
@@ -36,6 +38,7 @@ body, html {
 
 #header_subtext {
   font-size: 20px;
+  color: rgb(251, 255, 20);
 }
 
 .icons {
@@ -151,7 +154,8 @@ body, html {
   opacity: 1;
 }
 
-#about_row_header, #work_row_header {
+#about_row_header,
+#work_row_header {
   text-align: center;
   width: 100%;
   font-family: "Neucha", cursive;
@@ -166,7 +170,7 @@ body, html {
   padding-bottom: 3%;
 }
 
-#work_row>.row {
+#work_row > .row {
   padding-bottom: 8%;
 }
 
@@ -178,7 +182,8 @@ body, html {
 }
 
 #project_banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/tech_background.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/tech_background.png);
   height: 200px;
   background-attachment: fixed;
   background-position: center;
@@ -186,7 +191,7 @@ body, html {
   background-size: cover;
 }
 
-#project_banner>h1 {
+#project_banner > h1 {
   color: white;
   font-size: 80px;
   text-align: center;
@@ -245,7 +250,7 @@ body, html {
   position: absolute;
 }
 
-.card-footer>button:hover {
+.card-footer > button:hover {
   background-color: black;
   color: white;
 }
@@ -276,10 +281,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* color: yellow; */
     font-size: 30px;
   }
-  #header_subtext, .hero-text {
+  #header_subtext,
+  .hero-text {
     font-size: 10px;
   }
-  #about_row_header, #work_row_header {
+  #about_row_header,
+  #work_row_header {
     font-size: 30px;
     text-align: center;
     width: 100%;
@@ -344,7 +351,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #project_row .card-title {
     font-size: 20px;
   }
-  #project_row .card-text, #project_row button, .languages {
+  #project_row .card-text,
+  #project_row button,
+  .languages {
     font-size: 12px;
   }
 }
@@ -356,10 +365,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* color: orange; */
     font-size: 40px;
   }
-  #header_subtext, .hero-text {
+  #header_subtext,
+  .hero-text {
     font-size: 13px;
   }
-  #about_row_header, #work_row_header {
+  #about_row_header,
+  #work_row_header {
     font-size: 40px;
     text-align: center;
     width: 100%;
@@ -382,7 +393,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* color: green; */
     font-size: 51px;
   }
-  #header_subtext, .hero-text {
+  #header_subtext,
+  .hero-text {
     font-size: 16px;
   }
   #me_image {
@@ -404,7 +416,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #header_name {
     font-size: 60px;
   }
-  #header_subtext, .hero-text {
+  #header_subtext,
+  .hero-text {
     font-size: 18px;
   }
   .hero-text button {
@@ -417,47 +430,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: -7%;
     margin-bottom: 2%;
   }
-  #about_row .card-title {
+  AS #about_row .card-title {
     font-size: 30px;
     text-align: center;
-  }
-}
-
-/* typewriter effect */
-
-#header_subtext {
-  color: rgb(251, 255, 20);
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid rgb(252, 184, 83);
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
-  /* Adjust as needed */
-  animation: typing 6.5s steps(40, end), blink-caret 0.5s step-end infinite;
-}
-
-/* The typing effect */
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgb(173, 173, 173);
   }
 }
