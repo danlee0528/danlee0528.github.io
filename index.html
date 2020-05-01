@@ -3,302 +3,208 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="timeline.css">
-    <!-- <link rel="stylesheet" type="text/css" href="media.css"> -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Open+Sans|Neucha|Schoolbell&display=swap"
-        rel="stylesheet">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-    <title>Daniel's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Welcome Section -->
-
-    <div class="container-fluid" id="welcome_page">
-        <a href="#about_row"><img src="/icons/down-arrow.png" alt="navigation" class="icons"
-                style="bottom: 5%; right: 3%; position: absolute;"></a>
-        <img id="menu_icon" src="/icons/menu_orange.png" alt="pointer" class="icons"
-            style="top:5%; right:3%; position: absolute; cursor:pointer;" onclick="openNav()">
-
-        <!-- Overlay Nav -->
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#about_row" onclick="closeNav()">
-                    <p class="navTexts">About</p>
-                </a>
-                <a href="#work_row" onclick="closeNav()">
-                    <p class="navTexts">Work</p>
-                </a>
-                <a href="#project_banner" onclick="closeNav()">
-                    <p class="navTexts">Projects</p>
-                </a>
+    <div>
+        <div class="icon_container">
+            <a href="https://github.com/danlee0528" target="_blank"><i class="fa fa-github icons fa-lg"></i></a>
+            <a href="https://www.instagram.com/danlee0528/" target="_blank"><i class="fa fa-instagram icons fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/danlee0528/" target="_blank"><i class="fa fa-linkedin icons fa-lg"></i></a>
+            <a href="https://www.facebook.com/daniel.lee.3591267?ref=bookmarks" target="_blank"><i class="fa fa-facebook icons fa-lg"></i></a>
+            <p class="follow_text">FOLLOW ME <span class="on_text">ON</span></p>
+        </div>
+        <div class="top_btn_container">
+            <i class="fa fa-angle-double-up fa-lg top-btn"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <a class="nav_items" href="#main_header">intro</a>
+                    <a class="nav_items" href="#">portfolio</a>
+                    <a class="nav_items" href="#">work</a>
+                    <a class="nav_items" href="#">resume</a>
+                </nav>
             </div>
-        </div>
-        <div class="hero-text" id="header_texts">
-            <h1 id="header_name">Hi, I am Daniel Lee</h1>
-            <div id="header_subtext">And I am a Software Developer!</div>
-            <a href="./resume.pdf"><button class="resume_btn">Resume</button></a>
-        </div>
-    </div>
-
-    <div class="container">
-        <!-- About Section -->
-        <div class="row" id="about_row">
-            <h1 class="display-4" id="about_row_header">Optimism. Initiative. Integrity.</h1>
-            <!-- Card -->
-            <div class="card mb-3" data-aos="fade">
-                <div class="row no-gutters">
-                    <div class="col-xl-4">
-                        <img src="/images/me.PNG" class="card-img" alt="me" id="me_image">
-                    </div>
-                    <div class="col-xl-8">
-                        <div class="card-body" style="padding-left: 5%;">
-                            <p class="card-text">
-                                Daniel is an aspiring developer, with experience leading and developing various projects
-                                – school and personal. His backgrounds in computer science, visual design, music, and
-                                sports inform him mindful but competitive approach to the way he develops applications.
-                                He is fueled by his passion for helping people with needs of technology and education.
-                                Daniel considers himself a ‘humble learner’, always eager to learn new things and gives
-                                what
-                                he receives back to the community.
-                                <br><br> His hunger for knowledge and determination to turn information into action has
-                                contributed to his most recent position at Canadian Tire Corporation, where he analyzed
-                                the performance of internal applications to
-                                provide answers to unknown issues, and developed a license monitoring alert to help the
-                                company avoid unwanted penalties for license overages. Meanwhile, he improved the
-                                productivity of his team by assisting developers
-                                with testing automation scripts, processing tickets and managing several mini projects
-                                such as alert and dashboard naming standardization and managing KPI reports.
-                                <br><br> Daniel believes integrity in the workplace is key to success – listening to
-                                advices, developing good habits and executing new ideas. Daniel is currently in his
-                                final year of Computer Science degree and is ready
-                                to embrace a new challenge. Reach out to <strong><a
-                                        href="mailto:hla191@sfu.ca">hla191@sfu.ca</a></strong> to connect!
-                            </p>
-                        </div>
+            <div class="row">
+                <div class="main_header">
+                    <q class="quote">Our greatet weakness lies in giving up. The most certain way to succeed is always to try just one more time. </q>
+                </div>
+            </div>
+            <div class="row">
+                <div class="intro_container">
+                    <img src="images/me.PNG" class="myImage">
+                    <div class="intro_text">
+                        <h3>Hi, I am Daniel</b></h3>
+                        <h3>And I am a developer!</h3>
+                        <p class="intro_text2">I enjoy developing applications to solve problems in our daily life. I aspire to make
+                            differences with technology.
+                            I'm currently in the last semester of my Computer Science degree at Simon Fraser University in Vancouver, BC Canada. </p>
                     </div>
                 </div>
             </div>
-
-            <!-- SNS Links -->
-            <div class="mediaIcons_container">
-                <span
-                    style="padding-right: 1%;font-family: 'Schoolbell', cursive; font-size: 20px;vertical-align:middle">
-                    Stalk Me: </span>
-                <a href="https://www.instagram.com/danlee0528/?hl=en"><img class="mediaIcons "
-                        src="/icons/instagram.png " alt="instagram "></a>
-                <a href="https://www.facebook.com/daniel.lee.3591267 "><img class="mediaIcons "
-                        src="/icons/facebook.png " alt="facebook "></a>
-                <a href="https://github.com/danlee0528 "><img class="mediaIcons " src="/icons/github.png "
-                        alt="github "></a>
-                <a href="https://www.linkedin.com/in/danlee0528/ "><img class="mediaIcons " src="/icons/linkedin.png "
-                        alt="linkedin "></a>
-                <a href="https://soundcloud.com/daniel-lee-48 "><img class="mediaIcons " src="/icons/soundcloud.png "
-                        alt="linkedin "></a>
-                <a href="https://dev.to/danlee0528"><img class="mediaIcons " src="/icons/dev.png "
-                        alt="devblog "></a>
-
-                </span>
+            <div class="row">
+                <div class="course_container">
+                    <h3 class="course_header">My Favourite Courses</h3>
+                    <h6 class="courses">Software Engineering / CMPT 276</h6>
+                    <p class="course_info">I learned about agile methodology and applied it to developing Carbon Emission Tracker App on Android.</p>
+                    
+                    <h6 class="courses">Database System I / CMPT 354</h6>
+                    <p class="course_info">I learned about relational database management system and built Airline Databse Management System.</p>
+                    
+                    <h6 class="courses">Artificial Intelligence Survey / CMPT 310 </h6>
+                    <p class="course_info">This course was ground-breaking and mind-refreshing for me. 
+                        I learned about fundamental AI algorithms such as backtracking, hill-climbing, A* search and so many more.</p>
+                    
+                    <h6 class="courses">Web-based Information System / CMPT 470</h6>
+                    <p class="course_info">This course was the most frustrating and exciting course where I developed a clone of the university job board website with indifferent team mates.    
+                          So, I needed to lead the team by taking initatives. It was a very fun project though.</p>
+                    
+                    <h6 class="courses">User Interface Design / CMPT 363 </h6>
+                    <p class="course_info">I learned only theories (which I didn't enjoy as much as I thought I would),
+                         however, this course eventually led me to take Graphic Design, Digital Image Design and Motion Graphic Design courses later in my college years.</p>
+                    
+                    <h6 class="courses">Data Mining / CMPT 459</h6>
+                    <p class="course_info">The course was originally designed for graduate students. I had a chance to take this course when it was offered to undergraduate students as an experimental course. 
+                        Prior to this course, I learned myself machine learning with Standford machine learning course on Coursea.
+                        I learned basic machine learning algorithms and applied the knowledge to solve a real-world problem 
+                        - predicting interest level of a new rental listing on RentHop! It was fun competing against classmates. </p>
+                </div>
             </div>
+            <div class="row">
+                <div class="work_container">
+                    <h1>My Experience</h1>
+                    <h3 class="company_name"> Canadian Tire Corporation (Internship) </h3>
+                    <h6 class="job_title"> DevOps Support Analyst / Development Support </h6>
+                    <h7 class= "job_date"> 09/2018 - 04-2019 </h7>
+                    <br><br>
+                    <img src="https://www.dividendgrowthinvestingandretirement.com/wp-content/uploads/2018/12/Canadian-Tire-Brands.png" width="100%;">
+                    <br><br>
+                    <p class="job_info"> 
+                        <b>Team & Responsibilities</b><br><br>
+                        I was part of a cross functional team of 12 members working on Continuous Integration (CI) and Continuous Development (CD), and application monitoring. 
+                         My main responsibilities were processing tickets/incidents and monitroing/investigating licence spikes.
+                        <br><br><b>Work Performance</b><br><br>
+                        My team lead entrusted me with more technically chanllenging tasks such as analzying massive amount of logs by writing complex queries and reporting findings to various internal teams. 
+                        Besides, I conducted user acceptance testing, documented Key Performance Index (KPI) reports, assisted an integration developer debugging automation scripts and helepd various teams set up monitoring dashboards and alerts (lots of QA tasks).
+                        <br><br><b>Accomplishment</b><br><br>
+                        Remarkably I developed a licence breaching alert that rectified dilatory controls of licence overages in the company, proposed application standardization to scale our services to growing demands and created cyber week business dashboard for executives.
+                    </p>   
+                    <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio_container">
+                    <h3>Portfolio Snippets</h3>
+                    <br><br>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://github.com/danlee0528/myBetterExperience/raw/master/student-demo.gif" alt="First slide" width="100%;">
+                            <div class="carousel-caption  d-md-block">
+                                <h5>myBetterExperience</h5>
+                                <p>An ehnaced version of my college job board website built with MongoDB, Express.js, React.js, and Node.js </p>
+                                <a target="_blank" href="https://github.com/danlee0528/myBetterExperience">click here to see source code</a>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://github.com/danlee0528/grading-scale-system/raw/master/scaling-demo.gif" alt="Second slide" width="100%;">
+                            <div class="carousel-caption  d-md-block">
+                                <h5>Student Grades Scaling System</h5>
+                                <p>A secure grade scaling system that allows only verified user to sign-in, upload csv files, and scale grades live</p>
+                                <a target="_blank" href="https://github.com/danlee0528/grading-scale-system">click here to see source code</a>  
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS/raw/master/slowerdemo.gif" alt="Third slide" >
+                            <div class="carousel-caption  d-md-block">
+                                <h5>AI Tic-Tac-Toe</h5>
+                                <p>This AI program generates 100% win rate or draw against a smart human player by adapting pure Monte Carlo Tree Search algorithm</p>
+                                <a target="_blank" href="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS">click here to see source code</a>  
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application/raw/master/Gameplay_preview.JPG" alt="Fourth slide">
+                            <div class="carousel-caption  d-md-block">
+                                <h5>Real-time 3D Tic-Tac-Toe Game</h5>
+                                <p>This program allows multiple players to chat while playing games together through a web socket</p>
+                                <a target="_blank" href="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application">click here to see source code</a>  
+                            </div>
+                          </div>
 
-        </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://github.com/danlee0528/Airline-Database-System/raw/master/db.jpg" alt="Fifth slide">
+                            <div class="carousel-caption  d-md-block">
+                                <h5>Airline Database Management System</h5>
+                                <p>MS SQL with a custom graphic user interface allows users to create a profile, book a flight and search for their flights at ease</p>
+                                <a target="_blank" href="https://github.com/danlee0528/Airline-Database-System">click here to see source code</a>  
+                            </div>
+                          </div>
 
-        <!-- Work Section -->
-        <div class="row" id="work_row">
-            <h1 class="display-4" id="work_row_header">Timeline of My Journey</h1>
-            <div class="row" data-aos="fade" style="width:inherit; margin-left: 1px;">
-                <div class=" col-md-12 ">
-                    <div class="main-timeline4 ">
-                        <div class="timeline">
-                            <a href="https://www.linkedin.com/in/danlee0528/ " class="timeline-content ">
-                                <span class="year ">2019~</span>
-                                <div class="inner-content ">
-                                    <h3 class="title ">Coming Soon!</h3>
-                                    <p class="description ">
-                                        Who knows where the next stop is going to be?
-                                        I'm currently enrolled in the final year of my degree! Hire Me in advance!
-                                    </p>
-                                </div>
-                            </a>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://github.com/danlee0528/producer-consumer-problem/raw/master/pcp.JPG" alt="Sixth slide">
+                            <div class="carousel-caption  d-md-block">
+                                <h5>Consumer and Producer Problem (aka Bounded-Buffer Program)</h5>
+                                <p>When there're multiple threads accessing a shared resource, how does a program avoid deadlocks?</p>
+                                <a target="_blank" href="https://github.com/danlee0528/producer-consumer-problem/">click here to see source code</a>  
+                            </div>
+                          </div>
                         </div>
-                        <div class="timeline">
-                            <a href="https://corp.canadiantire.ca/English/home/default.aspx " class="timeline-content ">
-                                <span class="year ">2018</span>
-                                <div class="inner-content ">
-                                    <h3 class="title ">DevOps Support Analyst</h3>
-                                    <p class="description ">
-                                        From September 2018 to April 2019, I had my first internship at Canadian Tire
-                                        Corporation in Calgary, AB.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="https://www.sfu.ca " class="timeline-content ">
-                                <span class="year ">2016</span>
-                                <div class="inner-content ">
-                                    <h3 class="title ">Simon Fraser University</h3>
-                                    <p class="description ">
-                                        Depiste all the oddities and failures in the past, I worked my way to study
-                                        Computer Science bachelor's program for the future that yet to come!
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="#https://www.vcc.ca/programscourses/program-areas/university-transfer/software-systems-major-bachelor-of-applied-science---transfer-to-sfu/#progDescription "
-                                class="timeline-content ">
-                                <span class="year ">2015</span>
-                                <div class="inner-content ">
-                                    <h3 class="title ">Vancouver Community College</h3>
-                                    <p class="description ">
-                                        I was enrolled in their Software System Major University Transfer program.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
                     </div>
+                    <br><br>
+                    <h7 class="portfolio_skills">Throughout my college, internship and spare time, I've been using the following technology to develop applications:
+                        <br><br>
+                        Java, Python, C, C++, C#, HTML5, CSS3, JavaScript, JQuery, AJAX, Bootstrap4, Node.js, Express.js, PHP, Apache, React, Django, AWS, GCP, ScikitLearn, Numpy, Pandas, Docker, Kubernetes, Git, JUnit, Jupyter Notebok, Atlassian (Confluence, JIRA, Bitbucket, Stash), Sumo Logic, New Relic, Zephyr, Rundeck, Vangrant, Docker, Kubernetes,, Android Studio, Balsamiq, Ansible
+                    </h7>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="blog_container"></div>
+            </div>
+            <div class="row"></div>
+
+
+
+
+
+            
+
+
         </div>
     </div>
 
-    <!--  Tech Section -->
-    <div class="container-fluid" id="project_banner">
-        <h1 class="display-4">PROJECTS</h1>
-    </div>
-
-    <!-- Project Section -->
-    <div class="container-fluid" id="project_row">
-        <div class="card-deck" data-aos="fade">
-            <div class="card">
-                <img src="images/database.png " class="card-img-top " alt="database " style="height:262px; ">
-                <h5 class="card-title">Airline Database System</h5>
-                <div>
-                    <span class="languages ">Java</span>
-                    <span class="languages ">SQL</span>
-                </div>
-                <p class="card-text"> A program that allows users to book a flight and check their flight schedules with
-                    a
-                    friendly-designed user interface
-                    ticket and check flight schedules</p>
-                <div class="card-footer">
-                    <button type="button" class="btn btn-primary "
-                        onclick="window.location.href='https://github.com/danlee0528/Airline-Database-System' ; ">View
-                        Source Code</button>
-                </div>
-
-            </div>
-            <div class="card">
-                <img src="images/threads.jpg " class="card-img-top " alt="threads " style="height:262px; ">
-                <h5 class="card-title">Bounded-Buffer Problem</h5>
-                <div>
-                    <span class="languages ">C</span>
-                </div>
-                <p class="card-text">A program that applies POXIS threads to solve deadlocks in multithreading with
-                    mutexes and semaphores</p>
-                <div class="card-footer ">
-                    <button type="button " class="btn btn-primary "
-                        onclick="window.location.href='https://github.com/danlee0528/producer-consumer-problem' ; ">View
-                        Source Code</button>
-                </div>
-
-            </div>
-            <div class="card">
-                <img src="/images/tictactoe.jpg " class="card-img-top " alt="tictactoe " style="height:262px; ">
-                <h5 class="card-title">Real-time Tic-Tac-Toe</h5>
-                <div>
-                    <span class="languages ">HTML5</span>
-                    <span class="languages ">CSS3</span>
-                    <span class="languages ">JavaScript</span>
-                    <span class="languages ">MongoDB</span>
-                </div>
-                <p class="card-text">A web application that utlizes JSON and socket.io to store/retrieve statistics
-                    and support gameplay between users</p>
-
-                <div class="card-footer ">
-                    <button type="button " class="btn btn-primary "
-                        onclick="window.location.href='https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application' ; ">View
-                        Source Code</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/images/puzzle.jpg " class="card-img-top " alt="puzzle " style="height:262px; ">
-                <h5 class="card-title">Web Puzzle Game</h5>
-                <div>
-                    <span class="languages ">HTML5</span>
-                    <span class="languages ">CSS3</span>
-                    <span class="languages ">JavaScript</span>
-                </div>
-                <p class="card-text">A client-side puzzle game where a user can guess the pre-defined set of
-                    puzzles</p>
-
-                <div class="card-footer ">
-                    <button type="button " class="btn btn-primary "
-                        onclick="window.location.href='https://github.com/danlee0528/Web-Puzzle-Application' ; ">View
-                        Source Code</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/images/ai.jpg " class="card-img-top " alt="ai " style="height:262px; ">
-                <h5 class="card-title">AI Tic-Tac-Toe Player</h5>
-                <div>
-                    <span class="languages ">Python</span>
-                </div>
-                <p class="card-text">AI player makes each move with pure Monte Carlo Tree Search Algorithm</p>
-
-                <div class="card-footer ">
-                    <button type="button " class="btn btn-primary "
-                        onclick="window.location.href='https://github.com/danlee0528/Tic-Tac-Toe-pMCTS' ; ">View
-                        Source Code</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/images/rgb.jpg " class="card-img-top " alt="rgb " style="height:262px; ">
-                <h5 class="card-title">Simple Image Filter</h5>
-                <div>
-                    <span class="languages ">Java</span>
-                </div>
-                <p class="card-text">A simple image filter that allows RGB colour alteration, grey scale and more
-                </p>
-
-                <div class="card-footer ">
-                    <button type="button " class="btn btn-primary "
-                        onclick="window.location.href='https://github.com/danlee0528/image-processing' ; ">View
-                        Source Code</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
-    <script>
-        AOS.init();
-        AOS.init({
-            duration: 1000,
-            delay: 300,
-        });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-        crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
-        crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
-        crossorigin="anonymous "></script>
 </body>
 
 </html>
