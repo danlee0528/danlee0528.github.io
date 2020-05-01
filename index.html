@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-_style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,6 +25,7 @@
 <body>
     <div>
         <div class="icon_container">
+            <a href="https://dev.to/danlee0528" target="_blank"><img class="dev_icon" src="https://img.icons8.com/windows/32/000000/dev.png"/></a>
             <a href="https://github.com/danlee0528" target="_blank"><i class="fa fa-github icons fa-lg"></i></a>
             <a href="https://www.instagram.com/danlee0528/" target="_blank"><i class="fa fa-instagram icons fa-lg"></i></a>
             <a href="https://www.linkedin.com/in/danlee0528/" target="_blank"><i class="fa fa-linkedin icons fa-lg"></i></a>
@@ -33,10 +35,11 @@
         <div class="top_btn_container">
             <i class="fa fa-angle-double-up fa-lg top-btn"></i>
         </div>
+
         <div class="container">
             <div class="row">
                 <nav>
-                    <a class="nav_items" href="#main_header">intro</a>
+                    <a class="nav_items" href="#">intro</a>
                     <a class="nav_items" href="#">portfolio</a>
                     <a class="nav_items" href="#">work</a>
                     <a class="nav_items" href="#">resume</a>
@@ -51,8 +54,7 @@
                 <div class="intro_container">
                     <img src="images/me.PNG" class="myImage">
                     <div class="intro_text">
-                        <h3>Hi, I am Daniel</b></h3>
-                        <h3>And I am a developer!</h3>
+                        <h3>Hi, I am Daniel and I am a Developer!</h3>
                         <p class="intro_text2">I enjoy developing applications to solve problems in our daily life. I aspire to make
                             differences with technology.
                             I'm currently in the last semester of my Computer Science degree at Simon Fraser University in Vancouver, BC Canada. </p>
@@ -61,7 +63,7 @@
             </div>
             <div class="row">
                 <div class="course_container">
-                    <h3 class="course_header">My Favourite Courses</h3>
+                    <h1 class="course_header">My Favourite Courses</h1>
                     <h6 class="courses">Software Engineering / CMPT 276</h6>
                     <p class="course_info">I learned about agile methodology and applied it to developing Carbon Emission Tracker App on Android.</p>
                     
@@ -94,117 +96,145 @@
                     <h6 class="job_title"> DevOps Support Analyst / Development Support </h6>
                     <h7 class= "job_date"> 09/2018 - 04-2019 </h7>
                     <br><br>
-                    <img src="https://www.dividendgrowthinvestingandretirement.com/wp-content/uploads/2018/12/Canadian-Tire-Brands.png" width="100%;">
-                    <br><br>
-                    <p class="job_info"> 
-                        <b>Team & Responsibilities</b><br><br>
-                        I was part of a cross functional team of 12 members working on Continuous Integration (CI) and Continuous Development (CD), and application monitoring. 
-                         My main responsibilities were processing tickets/incidents and monitroing/investigating licence spikes.
-                        <br><br><b>Work Performance</b><br><br>
-                        My team lead entrusted me with more technically chanllenging tasks such as analzying massive amount of logs by writing complex queries and reporting findings to various internal teams. 
-                        Besides, I conducted user acceptance testing, documented Key Performance Index (KPI) reports, assisted an integration developer debugging automation scripts and helepd various teams set up monitoring dashboards and alerts (lots of QA tasks).
-                        <br><br><b>Accomplishment</b><br><br>
-                        Remarkably I developed a licence breaching alert that rectified dilatory controls of licence overages in the company, proposed application standardization to scale our services to growing demands and created cyber week business dashboard for executives.
+                    <img  class="work_image" src="https://www.dividendgrowthinvestingandretirement.com/wp-content/uploads/2018/12/Canadian-Tire-Brands.png" width="100%;">
+                    <br><br><br>
+                        <b class="job_info_subheadings">Team & Responsibilities</b><br><br>
+                        <p class="job_info"> I was part of a cross functional team of 12 members working on Continuous Integration (CI) and Continuous Development (CD), and application monitoring. 
+                         My main responsibilities were processing tickets/incidents and monitroing/investigating licence spikes.</p>
+                        <br><b class="job_info_subheadings">Work Performance</b><br><br>
+                        <p class="job_info"> My team lead entrusted me with more technically chanllenging tasks such as analzying massive amount of logs by writing complex queries and reporting findings to various internal teams. 
+                        Besides, I conducted user acceptance testing, documented Key Performance Index (KPI) reports, assisted an integration developer debugging automation scripts and helepd various teams set up monitoring dashboards and alerts (lots of QA tasks).</p>
+                        <br><b class="job_info_subheadings">Accomplishment</b><br><br>
+                        <p class="job_info"> Remarkably I developed a licence breaching alert that rectified dilatory controls of licence overages in the company, proposed application standardization to scale our services to growing demands and created cyber week business dashboard for executives.</p>
                     </p>   
-                    <br><br>
                 </div>
             </div>
             <div class="row">
                 <div class="portfolio_container">
-                    <h3>Portfolio Snippets</h3>
-                    <br><br>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://github.com/danlee0528/myBetterExperience/raw/master/student-demo.gif" alt="First slide" width="100%;">
-                            <div class="carousel-caption  d-md-block">
-                                <h5>myBetterExperience</h5>
-                                <p>An ehnaced version of my college job board website built with MongoDB, Express.js, React.js, and Node.js </p>
-                                <a target="_blank" href="https://github.com/danlee0528/myBetterExperience">click here to see source code</a>
+                    <h1>Portfolio Snippets</h1>
+                    <br>
+                     <p class="portfolio_info">Throughout my college, internship and spare time, I've been developing applications. Here's a few of them.
+                
+
+
+                        <div class="card-columns">
+                            <div class="card border-secondary">
+                              <img class="card-img-top" src="https://github.com/danlee0528/myBetterExperience/raw/master/student-demo.gif" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">myBetterExperience</h5>
+                                <p class="card-text">Why can't students share reviews of companies and search jobs on Google Maps? It was designed to solve co-op resources not being available to students 24/7.
+                                </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/myBetterExperience" class="btn btn-primary">See Project</a></small></p>
                               </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="https://github.com/danlee0528/grading-scale-system/raw/master/scaling-demo.gif" alt="Second slide" width="100%;">
-                            <div class="carousel-caption  d-md-block">
-                                <h5>Student Grades Scaling System</h5>
-                                <p>A secure grade scaling system that allows only verified user to sign-in, upload csv files, and scale grades live</p>
-                                <a target="_blank" href="https://github.com/danlee0528/grading-scale-system">click here to see source code</a>  
                             </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS/raw/master/slowerdemo.gif" alt="Third slide" >
-                            <div class="carousel-caption  d-md-block">
-                                <h5>AI Tic-Tac-Toe</h5>
-                                <p>This AI program generates 100% win rate or draw against a smart human player by adapting pure Monte Carlo Tree Search algorithm</p>
-                                <a target="_blank" href="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS">click here to see source code</a>  
+                            
+                            <div class="card border-secondary">
+                                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaJ77OiP_0J2thEXa3A0OwqwGwBA6fTWvgb_3r9wx1GX6MLU_E&usqp=CAU" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Two Sigma Connect: Rental Listing Inquiries</h5>
+                                <p class="card-text">How can a new rental listing on RentHop website attract more potential buyers? </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Two-Sigma-Connect-Rental-Listing-Inquiries" class="btn btn-primary">See Project</a></small></p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application/raw/master/Gameplay_preview.JPG" alt="Fourth slide">
-                            <div class="carousel-caption  d-md-block">
-                                <h5>Real-time 3D Tic-Tac-Toe Game</h5>
-                                <p>This program allows multiple players to chat while playing games together through a web socket</p>
-                                <a target="_blank" href="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application">click here to see source code</a>  
+                            
+                            
+                            <div class="card border-secondary">
+                                <img class="card-img-top" src="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application/raw/master/Gameplay_preview.JPG" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Real-time 3D Tic-Tac-Toe Game</h5>
+                                    <p class="card-text">A web game application that supports live chat and gameplay!</p>
+                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application" class="btn btn-primary">See Project</a></small></p>
+                                </div>
                             </div>
-                          </div>
+                            
+                            
+                            <div class="card border-secondary">
+                                <img class="card-img-top" src="https://miro.medium.com/max/900/0*Uw37vrrKzeEWahdB" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Iris Species Classifier</h5>
+                                    <p class="card-text">Have you ever heard about Machine Learning? How does a computer classify Iris species with dataset of sepal and petal legnths? </p>
+                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Iris-Species-Machine-Learning" class="btn btn-primary">See Project</a></small></p>
+                                </div>
+                            </div>
+                            
+                            <div class="card border-secondary">
+                                <img class="card-img-top" src="https://github.com/danlee0528/grading-scale-system/raw/master/scaling-demo.gif" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Student Grades Scaling System</h5>
+                                    <p class="card-text">Securely sign-in, upload scv files and scale grades on live!</p>
+                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/grading-scale-system" class="btn btn-primary">See Project</a></small></p>
+                                </div>
+                            </div>
 
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="https://github.com/danlee0528/Airline-Database-System/raw/master/db.jpg" alt="Fifth slide">
-                            <div class="carousel-caption  d-md-block">
-                                <h5>Airline Database Management System</h5>
-                                <p>MS SQL with a custom graphic user interface allows users to create a profile, book a flight and search for their flights at ease</p>
-                                <a target="_blank" href="https://github.com/danlee0528/Airline-Database-System">click here to see source code</a>  
+                            <div class="card border-secondary">
+                                <img class="card-img-top" src="https://github.com/danlee0528/Airline-Database-System/raw/master/db.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Airline Database Management System</h5>
+                                    <p class="card-text">A custom graphic user interface let users create a profile, book a flight and search for their flight with ease! </p>
+                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Airline-Database-System" class="btn btn-primary">See Project</a></small></p>
+                                </div>
                             </div>
-                          </div>
+                            
+                            
+                            <div class="card border-secondary">
+                                  <img class="card-img-top" src="https://github.com/danlee0528/producer-consumer-problem/raw/master/pcp.JPG" alt="Card image cap">
+                                  <div class="card-body">
+                                  <h5 class="card-title">producer-consumer-problem</h5>
+                                  <p class="card-text">When multiple theads try to access a shared resource, how are you going to control the traffic to avoid deadlocks?</p>
+                                  <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/producer-consumer-problem" class="btn btn-primary">See Project</a></small></p>
+                                </div>
+                            </div>
+                            
+                            <div class="card border-secondary">
+                                <img class="card-img-top" src="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS/raw/master/slowerdemo.gif" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">AI Tic-Tac-Toe Program</h5>
+                                    <p class="card-text">Can you beat AI that decides its moves using pure Monte Carlo Tree Search algorithm against a smart human player? It has 100% win rate or darw! </p>
+                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS" class="btn btn-primary">See Project</a></small></p>
+                                </div>
+                            </div>
+                            
 
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="https://github.com/danlee0528/producer-consumer-problem/raw/master/pcp.JPG" alt="Sixth slide">
-                            <div class="carousel-caption  d-md-block">
-                                <h5>Consumer and Producer Problem (aka Bounded-Buffer Program)</h5>
-                                <p>When there're multiple threads accessing a shared resource, how does a program avoid deadlocks?</p>
-                                <a target="_blank" href="https://github.com/danlee0528/producer-consumer-problem/">click here to see source code</a>  
+                            <div class="card border-secondary">
+                                <img class="card-img-top" src="https://github.com/danlee0528/Image-Processing/raw/master/imageprocess.PNG" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Image Processing App</h5>
+                                  <p class="card-text">A true beauty lies in the hand of a great photographer. Are you interested in making yourself look better in picture? </p>
+                                  <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Image-Processing" class="btn btn-primary">See Project</a></small></p>
+                                </div>
                             </div>
-                          </div>
+                            
+                            
+
+                            <div class="card border-secondary">
+                                <img class="card-img-top" src="https://github.com/danlee0528/Polling-App/raw/master/demo.gif" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Polling App</h5>
+                                <p class="card-text">Whether you need a survey or polling tool, this is the right tool to use! </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Polling-App" class="btn btn-primary">See Project</a></small></p>
+                                </div>
+                            </div>
+
+
+
+
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
+
+
+
+                
                     </div>
-                    <br><br>
-                    <h7 class="portfolio_skills">Throughout my college, internship and spare time, I've been using the following technology to develop applications:
-                        <br><br>
-                        Java, Python, C, C++, C#, HTML5, CSS3, JavaScript, JQuery, AJAX, Bootstrap4, Node.js, Express.js, PHP, Apache, React, Django, AWS, GCP, ScikitLearn, Numpy, Pandas, Docker, Kubernetes, Git, JUnit, Jupyter Notebok, Atlassian (Confluence, JIRA, Bitbucket, Stash), Sumo Logic, New Relic, Zephyr, Rundeck, Vangrant, Docker, Kubernetes,, Android Studio, Balsamiq, Ansible
-                    </h7>
-                </div>
             </div>
-
-            <div class="row">
-                <div class="blog_container"></div>
-            </div>
-            <div class="row"></div>
-
-
-
-
-
-            
-
-
         </div>
+
+
     </div>
 
+
+
+    <footer>
+        Copyright &#169; 2020 Daniel Lee. All rights reserved.
+    </footer>
 </body>
 
 </html>

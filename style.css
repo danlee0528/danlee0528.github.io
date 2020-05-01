@@ -5,6 +5,8 @@
   color: rgb(67, 194, 199);
   width: 100%;
   height: auto;
+  text-align: center;
+  display: grid;
 }
 
 .row{
@@ -14,7 +16,6 @@
 
 
 .intro_container, .course_container, .work_container, .portfolio_container, .blog_container{
-    text-align: center;
     width: 100%;
 }
 
@@ -22,11 +23,11 @@
     padding-top: 5%;
 }
 
-.intro_text2, .portfolio_skills{
+.intro_text2, .portfolio_info, .card-text{
     color:  rgb(144, 144, 144);
 }
 
-.courses, .quote, .job_title{
+.courses, .quote, .job_title, .job_info_subheadings, .card-title{
   color: rgb(228, 186, 51);
 }
 
@@ -46,7 +47,7 @@
 
 .icon_container {
   position: fixed;
-  bottom: 5%;
+  bottom: 5.2%;
   left: 3%;
   width: 10px;
   height: auto;
@@ -54,19 +55,26 @@
 
 
 .icons, .top-btn{
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   opacity: 0.3;
   color: white;
 }
 
-.icons:hover, .top-btn:hover {
+.dev_icon{
+    margin-left: -7px;
+    filter: invert(1);
+    opacity: 0.3;
+    background-color: transparent;
+}
+
+
+.icons:hover, .top-btn:hover, .dev_icon:hover{
   opacity: 1;
   transition: ease-in 0.5s;
   cursor: pointer;
 }
 
 nav{
-    text-align: center;
     width: 100%;
     padding: 5%;
 }
@@ -91,7 +99,6 @@ nav{
     padding-top: 50%;
     padding-bottom: 50%;
     width: 100%;
-    text-align: center;
 }
 
 .quote{
@@ -127,13 +134,15 @@ nav{
     padding-bottom: 5%;
 }
 
-.course_info, .job_info{
+.course_info, .job_info, .job_date{
     color: rgb(144, 144, 144);
 }
 
-.job_date{
-    color: beige;
+
+.course_info{
+    padding-bottom: 5%;
 }
+
 
 .company_name{
     color: rgb(255, 96, 81);
@@ -141,7 +150,8 @@ nav{
 
 .carousel-inner img {
     width: auto;
-    height: 300px;
+    height: 370px;
+    max-height: 370px;
 }
 
 .carousel-itemm{
@@ -152,3 +162,28 @@ nav{
     justify-content: center;
     padding: 5%;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: beige;
+    border-radius: 10%;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(67, 194, 199);
+  }
+
+  footer{
+      padding: 2%;
+      width: 100%;
+      color: beige;
+      text-align: center;
+  }
+
+  .portfolio_container{
+      display: grid;
+  }
