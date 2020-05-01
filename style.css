@@ -1,5 +1,7 @@
 * {
   background-color: rgb(20, 25, 32);
+  scroll-behavior: smooth;
+  transition: 0.5s;
 }
 .container {
   color: rgb(67, 194, 199);
@@ -9,25 +11,33 @@
   display: grid;
 }
 
-.row{
-    padding-left: 10%;
-    padding-right: 10%;
+.row {
+    padding: 10%;
 }
 
-
-.intro_container, .course_container, .work_container, .portfolio_container, .blog_container{
-    width: 100%;
+.intro_container,
+.course_container,
+.work_container,
+.portfolio_container,
+.blog_container {
+  width: 100%;
 }
 
-.intro_text{
-    padding-top: 5%;
+.intro_text {
+  padding-top: 5%;
 }
 
-.intro_text2, .portfolio_info, .card-text{
-    color:  rgb(144, 144, 144);
+.intro_text2,
+.portfolio_info,
+.card-text {
+  color: rgb(144, 144, 144);
 }
 
-.courses, .quote, .job_title, .job_info_subheadings, .card-title{
+.courses,
+.quote,
+.job_title,
+.job_info_subheadings,
+.card-title {
   color: rgb(228, 186, 51);
 }
 
@@ -37,12 +47,12 @@
   border: 2px solid rgba(149, 149, 149, 0.4);
 }
 
-.top_btn_container{
-    position: fixed;
-    bottom: 3%;
-    right: 4%;
-    width: 10px;
-    height: auto;
+.top_btn_container {
+  position: fixed;
+  bottom: 3%;
+  right: 4%;
+  width: 10px;
+  height: auto;
 }
 
 .icon_container {
@@ -53,137 +63,140 @@
   height: auto;
 }
 
-
-.icons, .top-btn{
+.icons,
+.top-btn {
   padding-bottom: 10px;
   opacity: 0.3;
   color: white;
 }
 
-.dev_icon{
-    margin-left: -7px;
-    filter: invert(1);
-    opacity: 0.3;
-    background-color: transparent;
+.dev_icon {
+  margin-left: -7px;
+  filter: invert(1);
+  opacity: 0.3;
+  background-color: transparent;
 }
 
-
-.icons:hover, .top-btn:hover, .dev_icon:hover{
+.icons:hover,
+.top-btn:hover,
+.dev_icon:hover {
   opacity: 1;
   transition: ease-in 0.5s;
   cursor: pointer;
 }
 
-nav{
-    width: 100%;
-    padding: 5%;
+nav {
+  width: 100%;
+  padding: 5%;
 }
 
-.nav_items{
-    opacity: 0.3;
-    color: white;
-    padding-left: 5%;
-    padding-right: 5%;
+.nav_items {
+  opacity: 0.3;
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.nav_items:hover{
-    opacity: 1;
-    color: white;
-    transition: 0.5s ease-in;
-    text-decoration: none;
+.nav_items:hover {
+  opacity: 1;
+  color: white;
+  transition: 0.5s ease-in;
+  text-decoration: none;
 }
 
-.main_header{
-    position: relative;
-    min-height: 500px;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    width: 100%;
+.main_header {
+  position: relative;
+  min-height: 500px;
+  padding-top: 40%;
+  padding-bottom: 50%;
+  width: 100%;
 }
 
-.quote{
-    color: rgb(235, 209, 177);
-    font-size: xx-large;
-    font-style: italic;
-    
+.quote {
+  color: rgb(235, 209, 177);
+  font-size: xx-large;
+  font-style: italic;
 }
 
-.follow_text{
-    text-orientation: mixed;
-    writing-mode: vertical-rl;
-    color: white;
-    padding-bottom: 20px;
-    opacity: 0.3;
-    margin: -5px;
-    transform: rotate(180deg);
+.follow_text {
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  color: white;
+  padding-bottom: 20px;
+  opacity: 0.3;
+  margin: -5px;
+  transform: rotate(180deg);
 }
 
-
-.on_text{
-    text-orientation: sideways;
-    writing-mode: horizontal-tb;
-    transform: rotate(-180deg);
-    color: white;
+.on_text {
+  text-orientation: sideways;
+  writing-mode: horizontal-tb;
+  transform: rotate(-180deg);
+  color: white;
 }
 
-.course_container, .work_container, .blog_container, .portfolio_container{
-    padding-top: 40%;
+.course_container,
+.work_container,
+.blog_container,
+.portfolio_container {
 }
 
-.course_header{
-    padding-bottom: 5%;
+.course_header {
+
+    padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.course_info, .job_info, .job_date{
-    color: rgb(144, 144, 144);
+.course_info,
+.job_info,
+.job_date {
+  color: rgb(144, 144, 144);
 }
 
-
-.course_info{
-    padding-bottom: 5%;
+.course_info {
+  padding-bottom: 5%;
 }
 
-
-.company_name{
-    color: rgb(255, 96, 81);
+.company_name, .course_header {
+  color: rgb(255, 96, 81);
 }
 
 .carousel-inner img {
-    width: auto;
-    height: 370px;
-    max-height: 370px;
+  width: auto;
+  height: 370px;
+  max-height: 370px;
 }
 
-.carousel-itemm{
-    width: 100%;
+.carousel-itemm {
+  width: 100%;
 }
 
-.carousel-caption{
-    justify-content: center;
-    padding: 5%;
+.carousel-caption {
+  justify-content: center;
+  padding: 5%;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: beige;
-    border-radius: 10%;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(67, 194, 199);
-  }
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: beige;
+  border-radius: 10%;
+}
 
-  footer{
-      padding: 2%;
-      width: 100%;
-      color: beige;
-      text-align: center;
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(67, 194, 199);
+}
 
-  .portfolio_container{
-      display: grid;
-  }
+footer {
+  padding: 2%;
+  width: 100%;
+  color: beige;
+  text-align: center;
+}
+
+.portfolio_container {
+  display: grid;
+}

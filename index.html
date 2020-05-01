@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive-_style.css">
+    <link rel="stylesheet" href="responsive_style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,207 +25,270 @@
 <body>
     <div>
         <div class="icon_container">
-            <a href="https://dev.to/danlee0528" target="_blank"><img class="dev_icon" src="https://img.icons8.com/windows/32/000000/dev.png"/></a>
+            <a href="https://dev.to/danlee0528" target="_blank"><img class="dev_icon"
+                    src="https://img.icons8.com/windows/32/000000/dev.png" /></a>
             <a href="https://github.com/danlee0528" target="_blank"><i class="fa fa-github icons fa-lg"></i></a>
-            <a href="https://www.instagram.com/danlee0528/" target="_blank"><i class="fa fa-instagram icons fa-lg"></i></a>
-            <a href="https://www.linkedin.com/in/danlee0528/" target="_blank"><i class="fa fa-linkedin icons fa-lg"></i></a>
-            <a href="https://www.facebook.com/daniel.lee.3591267?ref=bookmarks" target="_blank"><i class="fa fa-facebook icons fa-lg"></i></a>
+            <a href="https://www.instagram.com/danlee0528/" target="_blank"><i
+                    class="fa fa-instagram icons fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/danlee0528/" target="_blank"><i
+                    class="fa fa-linkedin icons fa-lg"></i></a>
+            <a href="https://www.facebook.com/daniel.lee.3591267?ref=bookmarks" target="_blank"><i
+                    class="fa fa-facebook icons fa-lg"></i></a>
             <p class="follow_text">FOLLOW ME <span class="on_text">ON</span></p>
         </div>
         <div class="top_btn_container">
-            <i class="fa fa-angle-double-up fa-lg top-btn"></i>
+            <a href="#nav_container"><i class="fa fa-angle-double-up fa-lg top-btn"></i></a>
         </div>
 
         <div class="container">
-            <div class="row">
-                <nav>
-                    <a class="nav_items" href="#">intro</a>
-                    <a class="nav_items" href="#">portfolio</a>
-                    <a class="nav_items" href="#">work</a>
-                    <a class="nav_items" href="#">resume</a>
-                </nav>
+            <nav id="nav_container">
+                <a class="nav_items" href="#intro_container">intro</a>
+                <a class="nav_items" href="#portfolio_container">portfolio</a>
+                <a class="nav_items" href="#work_container">work</a>
+                <a class="nav_items" href="#">resume</a>
+            </nav>
+
+            <div class="main_header">
+                <q class="quote">Our greatet weakness lies in giving up. The most certain way to succeed is always
+                    to try just one more time. </q>
             </div>
+
+
             <div class="row">
-                <div class="main_header">
-                    <q class="quote">Our greatet weakness lies in giving up. The most certain way to succeed is always to try just one more time. </q>
-                </div>
-            </div>
-            <div class="row">
-                <div class="intro_container">
+                <div id="intro_container" class="intro_container">
                     <img src="images/me.PNG" class="myImage">
                     <div class="intro_text">
-                        <h3>Hi, I am Daniel and I am a Developer!</h3>
-                        <p class="intro_text2">I enjoy developing applications to solve problems in our daily life. I aspire to make
+                        <h1>Hi, I am Daniel!<br> thank you for visiting my website :)</h1>
+                        <p class="intro_text2">I enjoy developing applications to solve problems in our daily life. I
+                            aspire to make
                             differences with technology.
-                            I'm currently in the last semester of my Computer Science degree at Simon Fraser University in Vancouver, BC Canada. </p>
+                            I'm currently in the last semester of my Computer Science degree at Simon Fraser University
+                            in Vancouver, BC Canada. </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="course_container">
-                    <h1 class="course_header">My Favourite Courses</h1>
+
+                <div id="course_container" class="course_container">
+                    <h3 class="course_header">My Favourite Courses</h3>
                     <h6 class="courses">Software Engineering / CMPT 276</h6>
-                    <p class="course_info">I learned about agile methodology and applied it to developing Carbon Emission Tracker App on Android.</p>
-                    
+                    <p class="course_info">I learned about agile methodology and applied it to developing Carbon
+                        Emission Tracker App on Android.</p>
+
                     <h6 class="courses">Database System I / CMPT 354</h6>
-                    <p class="course_info">I learned about relational database management system and built Airline Databse Management System.</p>
-                    
+                    <p class="course_info">I learned about relational database management system and built Airline
+                        Databse Management System.</p>
+
                     <h6 class="courses">Artificial Intelligence Survey / CMPT 310 </h6>
-                    <p class="course_info">This course was ground-breaking and mind-refreshing for me. 
-                        I learned about fundamental AI algorithms such as backtracking, hill-climbing, A* search and so many more.</p>
-                    
+                    <p class="course_info">This course was ground-breaking and mind-refreshing for me.
+                        I learned about fundamental AI algorithms such as backtracking, hill-climbing, A* search and so
+                        many more.</p>
+
                     <h6 class="courses">Web-based Information System / CMPT 470</h6>
-                    <p class="course_info">This course was the most frustrating and exciting course where I developed a clone of the university job board website with indifferent team mates.    
-                          So, I needed to lead the team by taking initatives. It was a very fun project though.</p>
-                    
+                    <p class="course_info">This course was the most frustrating and exciting course where I developed a
+                        clone of the university job board website with indifferent team mates.
+                        So, I needed to lead the team by taking initatives. It was a very fun project though.</p>
+
                     <h6 class="courses">User Interface Design / CMPT 363 </h6>
                     <p class="course_info">I learned only theories (which I didn't enjoy as much as I thought I would),
-                         however, this course eventually led me to take Graphic Design, Digital Image Design and Motion Graphic Design courses later in my college years.</p>
-                    
+                        however, this course eventually led me to take Graphic Design, Digital Image Design and Motion
+                        Graphic Design courses later in my college years.</p>
+
                     <h6 class="courses">Data Mining / CMPT 459</h6>
-                    <p class="course_info">The course was originally designed for graduate students. I had a chance to take this course when it was offered to undergraduate students as an experimental course. 
-                        Prior to this course, I learned myself machine learning with Standford machine learning course on Coursea.
-                        I learned basic machine learning algorithms and applied the knowledge to solve a real-world problem 
-                        - predicting interest level of a new rental listing on RentHop! It was fun competing against classmates. </p>
+                    <p class="course_info">The course was originally designed for graduate students. I had a chance to
+                        take this course when it was offered to undergraduate students as an experimental course.
+                        Prior to this course, I learned myself machine learning with Standford machine learning course
+                        on Coursea.
+                        I learned basic machine learning algorithms and applied the knowledge to solve a real-world
+                        problem
+                        - predicting interest level of a new rental listing on RentHop! It was fun competing against
+                        classmates. </p>
                 </div>
             </div>
             <div class="row">
-                <div class="work_container">
+                <div id="work_container" class="work_container">
                     <h1>My Experience</h1>
                     <h3 class="company_name"> Canadian Tire Corporation (Internship) </h3>
                     <h6 class="job_title"> DevOps Support Analyst / Development Support </h6>
-                    <h7 class= "job_date"> 09/2018 - 04-2019 </h7>
+                    <h7 class="job_date"> 09/2018 - 04-2019 </h7>
                     <br><br>
-                    <img  class="work_image" src="https://www.dividendgrowthinvestingandretirement.com/wp-content/uploads/2018/12/Canadian-Tire-Brands.png" width="100%;">
+                    <img class="work_image"
+                        src="https://www.dividendgrowthinvestingandretirement.com/wp-content/uploads/2018/12/Canadian-Tire-Brands.png"
+                        width="100%;">
                     <br><br><br>
-                        <b class="job_info_subheadings">Team & Responsibilities</b><br><br>
-                        <p class="job_info"> I was part of a cross functional team of 12 members working on Continuous Integration (CI) and Continuous Development (CD), and application monitoring. 
-                         My main responsibilities were processing tickets/incidents and monitroing/investigating licence spikes.</p>
-                        <br><b class="job_info_subheadings">Work Performance</b><br><br>
-                        <p class="job_info"> My team lead entrusted me with more technically chanllenging tasks such as analzying massive amount of logs by writing complex queries and reporting findings to various internal teams. 
-                        Besides, I conducted user acceptance testing, documented Key Performance Index (KPI) reports, assisted an integration developer debugging automation scripts and helepd various teams set up monitoring dashboards and alerts (lots of QA tasks).</p>
-                        <br><b class="job_info_subheadings">Accomplishment</b><br><br>
-                        <p class="job_info"> Remarkably I developed a licence breaching alert that rectified dilatory controls of licence overages in the company, proposed application standardization to scale our services to growing demands and created cyber week business dashboard for executives.</p>
-                    </p>   
+                    <b class="job_info_subheadings">Team & Responsibilities</b><br><br>
+                    <p class="job_info"> I was part of a cross functional team of 12 members working on Continuous
+                        Integration (CI) and Continuous Development (CD), and application monitoring.
+                        My main responsibilities were processing tickets/incidents and monitroing/investigating licence
+                        spikes.</p>
+                    <br><b class="job_info_subheadings">Work Performance</b><br><br>
+                    <p class="job_info"> My team lead entrusted me with more technically chanllenging tasks such as
+                        analzying massive amount of logs by writing complex queries and reporting findings to various
+                        internal teams.
+                        Besides, I conducted user acceptance testing, documented Key Performance Index (KPI) reports,
+                        assisted an integration developer debugging automation scripts and helepd various teams set up
+                        monitoring dashboards and alerts (lots of QA tasks).</p>
+                    <br><b class="job_info_subheadings">Accomplishment</b><br><br>
+                    <p class="job_info"> Remarkably I developed a licence breaching alert that rectified dilatory
+                        controls of licence overages in the company, proposed application standardization to scale our
+                        services to growing demands and created cyber week business dashboard for executives.</p>
+                    </p>
                 </div>
             </div>
             <div class="row">
-                <div class="portfolio_container">
-                    <h1>Portfolio Snippets</h1>
+                <div id="portfolio_container" class="portfolio_container">
+                    <h1>Portfolio Showcase</h1>
                     <br>
-                     <p class="portfolio_info">Throughout my college, internship and spare time, I've been developing applications. Here's a few of them.
-                
+                    <p class="portfolio_info">Throughout my college, internship and spare time, I've been developing
+                        applications. Here's a few of them.
+                    </p>
 
-
-                        <div class="card-columns">
-                            <div class="card border-secondary">
-                              <img class="card-img-top" src="https://github.com/danlee0528/myBetterExperience/raw/master/student-demo.gif" alt="Card image cap">
-                              <div class="card-body">
-                                <h5 class="card-title">myBetterExperience</h5>
-                                <p class="card-text">Why can't students share reviews of companies and search jobs on Google Maps? It was designed to solve co-op resources not being available to students 24/7.
-                                </p>
-                                <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/myBetterExperience" class="btn btn-primary">See Project</a></small></p>
-                              </div>
-                            </div>
-                            
-                            <div class="card border-secondary">
-                                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaJ77OiP_0J2thEXa3A0OwqwGwBA6fTWvgb_3r9wx1GX6MLU_E&usqp=CAU" alt="Card image cap">
-                                <div class="card-body">
+                    <div class="card-columns">
+                        <div class="card border-secondary">
+                            <img class="card-img-top"
+                                src="https://blog1.fkimg.com/wp-content/uploads/2017/03/San-Diego-California-Friends-Summer-Beach-House.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
                                 <h5 class="card-title">Two Sigma Connect: Rental Listing Inquiries</h5>
-                                <p class="card-text">How can a new rental listing on RentHop website attract more potential buyers? </p>
-                                <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Two-Sigma-Connect-Rental-Listing-Inquiries" class="btn btn-primary">See Project</a></small></p>
-                                </div>
+                                <p class="card-text">How can a new rental listing on RentHop website attract more
+                                    potential buyers? </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/Two-Sigma-Connect-Rental-Listing-Inquiries"
+                                            class="btn btn-primary">See Project</a></small></p>
                             </div>
-                            
-                            
-                            <div class="card border-secondary">
-                                <img class="card-img-top" src="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application/raw/master/Gameplay_preview.JPG" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Real-time 3D Tic-Tac-Toe Game</h5>
-                                    <p class="card-text">A web game application that supports live chat and gameplay!</p>
-                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application" class="btn btn-primary">See Project</a></small></p>
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="card border-secondary">
-                                <img class="card-img-top" src="https://miro.medium.com/max/900/0*Uw37vrrKzeEWahdB" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Iris Species Classifier</h5>
-                                    <p class="card-text">Have you ever heard about Machine Learning? How does a computer classify Iris species with dataset of sepal and petal legnths? </p>
-                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Iris-Species-Machine-Learning" class="btn btn-primary">See Project</a></small></p>
-                                </div>
-                            </div>
-                            
-                            <div class="card border-secondary">
-                                <img class="card-img-top" src="https://github.com/danlee0528/grading-scale-system/raw/master/scaling-demo.gif" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Student Grades Scaling System</h5>
-                                    <p class="card-text">Securely sign-in, upload scv files and scale grades on live!</p>
-                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/grading-scale-system" class="btn btn-primary">See Project</a></small></p>
-                                </div>
-                            </div>
-
-                            <div class="card border-secondary">
-                                <img class="card-img-top" src="https://github.com/danlee0528/Airline-Database-System/raw/master/db.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Airline Database Management System</h5>
-                                    <p class="card-text">A custom graphic user interface let users create a profile, book a flight and search for their flight with ease! </p>
-                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Airline-Database-System" class="btn btn-primary">See Project</a></small></p>
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="card border-secondary">
-                                  <img class="card-img-top" src="https://github.com/danlee0528/producer-consumer-problem/raw/master/pcp.JPG" alt="Card image cap">
-                                  <div class="card-body">
-                                  <h5 class="card-title">producer-consumer-problem</h5>
-                                  <p class="card-text">When multiple theads try to access a shared resource, how are you going to control the traffic to avoid deadlocks?</p>
-                                  <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/producer-consumer-problem" class="btn btn-primary">See Project</a></small></p>
-                                </div>
-                            </div>
-                            
-                            <div class="card border-secondary">
-                                <img class="card-img-top" src="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS/raw/master/slowerdemo.gif" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">AI Tic-Tac-Toe Program</h5>
-                                    <p class="card-text">Can you beat AI that decides its moves using pure Monte Carlo Tree Search algorithm against a smart human player? It has 100% win rate or darw! </p>
-                                    <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS" class="btn btn-primary">See Project</a></small></p>
-                                </div>
-                            </div>
-                            
-
-                            <div class="card border-secondary">
-                                <img class="card-img-top" src="https://github.com/danlee0528/Image-Processing/raw/master/imageprocess.PNG" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Image Processing App</h5>
-                                  <p class="card-text">A true beauty lies in the hand of a great photographer. Are you interested in making yourself look better in picture? </p>
-                                  <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Image-Processing" class="btn btn-primary">See Project</a></small></p>
-                                </div>
-                            </div>
-                            
-                            
-
-                            <div class="card border-secondary">
-                                <img class="card-img-top" src="https://github.com/danlee0528/Polling-App/raw/master/demo.gif" alt="Card image cap">
-                                <div class="card-body">
-                                <h5 class="card-title">Polling App</h5>
-                                <p class="card-text">Whether you need a survey or polling tool, this is the right tool to use! </p>
-                                <p class="card-text"><small class="text-muted"><a target="_blank" href="https://github.com/danlee0528/Polling-App" class="btn btn-primary">See Project</a></small></p>
-                                </div>
-                            </div>
-
-
-
-
                         </div>
 
+                        <div class="card border-secondary">
+                            <img class="card-img-top"
+                                src="https://github.com/danlee0528/myBetterExperience/raw/master/student-demo.gif"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">myBetterExperience</h5>
+                                <p class="card-text">Why can't students share reviews of companies and search jobs
+                                    on Google Maps? It was designed to solve co-op resources not being available to
+                                    students 24/7.
+                                </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/myBetterExperience"
+                                            class="btn btn-primary">See Project</a></small></p>
+                            </div>
+                        </div>
 
+                        <div class="card border-secondary">
+                            <img class="card-img-top" src="https://miro.medium.com/max/900/0*Uw37vrrKzeEWahdB"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Iris Species Classifier</h5>
+                                <p class="card-text">Have you ever heard about Machine Learning? How does a computer
+                                    classify Iris species with dataset of sepal and petal legnths? </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/Iris-Species-Machine-Learning"
+                                            class="btn btn-primary">See Project</a></small></p>
+                            </div>
+                        </div>
 
-                
+                        <div class="card border-secondary">
+                            <img class="card-img-top"
+                                src="https://github.com/danlee0528/producer-consumer-problem/raw/master/pcp.JPG"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">producer-consumer-problem</h5>
+                                <p class="card-text">When multiple theads try to access a shared resource, how are
+                                    you going to control the traffic to avoid deadlocks?</p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/producer-consumer-problem"
+                                            class="btn btn-primary">See Project</a></small></p>
+                            </div>
+                        </div>
+
+                        <div class="card border-secondary">
+                            <img class="card-img-top"
+                                src="https://github.com/danlee0528/grading-scale-system/raw/master/scaling-demo.gif"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Student Grades Scaling System</h5>
+                                <p class="card-text">Securely sign-in, upload scv files and scale grades on live!
+                                </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/grading-scale-system"
+                                            class="btn btn-primary">See Project</a></small></p>
+                            </div>
+                        </div>
+
+                        <div class="card border-secondary">
+                            <img class="card-img-top"
+                                src="https://github.com/danlee0528/Airline-Database-System/raw/master/db.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Airline Database Management System</h5>
+                                <p class="card-text">A custom graphic user interface let users create a profile,
+                                    book a flight and search for their flight with ease! </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/Airline-Database-System"
+                                            class="btn btn-primary">See Project</a></small></p>
+                            </div>
+                        </div>
+
+                        <div class="card border-secondary">
+                            <img class="card-img-top"
+                                src="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application/raw/master/Gameplay_preview.JPG"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Real-time 3D Tic-Tac-Toe Game</h5>
+                                <p class="card-text">A web game application that supports live chat and gameplay!
+                                </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/Real-time-3D-Tic-Tac-Toe-Web-Application"
+                                            class="btn btn-primary">See Project</a></small></p>
+                            </div>
+                        </div>
+
+                        <div class="card border-secondary">
+                            <img class="card-img-top"
+                                src="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS/raw/master/slowerdemo.gif"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">AI Tic-Tac-Toe Program</h5>
+                                <p class="card-text">Can you beat AI that decides its moves using pure Monte Carlo
+                                    Tree Search algorithm against a smart human player? It has 100% win rate or
+                                    darw! </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/AI-Tic-Tac-Toe-pMCTS"
+                                            class="btn btn-primary">See Project</a></small></p>
+                            </div>
+                        </div>
+
+                        <div class="card border-secondary">
+                            <img class="card-img-top"
+                                src="https://github.com/danlee0528/Polling-App/raw/master/demo.gif"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Polling App</h5>
+                                <p class="card-text">Whether you need a survey or polling tool, this is the right
+                                    tool to use! </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/Polling-App" class="btn btn-primary">See
+                                            Project</a></small></p>
+                            </div>
+                        </div>
+
+                        <div class="card border-secondary">
+                            <img class="card-img-top"
+                                src="https://github.com/danlee0528/Image-Processing/raw/master/imageprocess.PNG"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Image Processing App</h5>
+                                <p class="card-text">A true beauty lies in the hand of a great photographer. Are you
+                                    interested in making yourself look better in picture? </p>
+                                <p class="card-text"><small class="text-muted"><a target="_blank"
+                                            href="https://github.com/danlee0528/Image-Processing"
+                                            class="btn btn-primary">See Project</a></small></p>
+                            </div>
+                        </div>
                     </div>
+
+                </div>
             </div>
         </div>
+    </div>
 
 
     </div>
