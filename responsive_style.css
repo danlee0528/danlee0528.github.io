@@ -7,6 +7,13 @@
         padding-bottom: 50%;
         width: 100%;
     }
+    .icon_container {
+      position: fixed;
+      bottom: 5.2%;
+      left: 2%;
+      width: 10px;
+      height: auto;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -17,10 +24,24 @@
         padding-bottom: 50%;
         width: 100%;
     }
+    .icon_container {
+      position: fixed;
+      bottom: 5.2%;
+      left: 2%;
+      width: 10px;
+      height: auto;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .icon_container {
+    position: fixed;
+    bottom: 5.2%;
+    left: 2%;
+    width: 10px;
+    height: auto;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -31,5 +52,12 @@
     padding-top: 26%;
     padding-bottom: 50%;
     width: 100%;
+  }
+  .icon_container {
+    position: fixed;
+    bottom: 5.2%;
+    left: 4%;
+    width: 10px;
+    height: auto;
   }
 }

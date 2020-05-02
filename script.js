@@ -47,3 +47,22 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
+
+var mytopbutton = document.getElementsByClassName("top_btn_container");
+var myicons = document.getElementsByClassName("icon_container");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mytopbutton[0].style.display = "block";
+    myicons[0].style.display = "block";
+    
+  } else {
+    mytopbutton[0].style.display = "none";
+    myicons[0].style.display = "none";
+  }
+}

@@ -53,6 +53,7 @@
 }
 
 .top_btn_container {
+  display: none;
   position: fixed;
   bottom: 3%;
   right: 4%;
@@ -61,13 +62,13 @@
 }
 
 .icon_container {
+  display: none;
   position: fixed;
   bottom: 5.2%;
-  left: 2%;
+  left: 1%;
   width: 10px;
   height: auto;
 }
-
 .icons,
 .top-btn {
   padding-bottom: 10px;
