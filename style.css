@@ -20,8 +20,12 @@
 .course_container,
 .work_container,
 .portfolio_container,
-.blog_container {
+.blog_container, #nav_container{
   width: 100%;
+}
+
+#nav_container{
+  text-align: center;
 }
 
 .intro_text {
@@ -59,7 +63,7 @@
 .icon_container {
   position: fixed;
   bottom: 5.2%;
-  left: 3%;
+  left: 2%;
   width: 10px;
   height: auto;
 }
@@ -87,8 +91,9 @@
 }
 
 nav {
-  width: 100%;
-  padding: 5%;
+  padding-top: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .nav_items {
