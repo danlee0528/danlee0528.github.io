@@ -2,6 +2,7 @@
   background-color: rgb(20, 25, 32);
   scroll-behavior: smooth;
   transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
   color: rgb(67, 194, 199);
@@ -199,4 +200,44 @@ footer {
 
 .portfolio_container {
   display: grid;
+}
+
+#myBtnContainer{
+  margin-top: 2%;
+}
+
+
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: 1px solid beige;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  color: rgb(255, 96, 81);
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  color: rgb(255, 96, 81);
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn:focus{
+  outline: none !important;
+  box-shadow: none !important;
 }
