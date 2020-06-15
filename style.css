@@ -1,250 +1,437 @@
-* {
-  background-color: rgb(20, 25, 32);
-  scroll-behavior: smooth;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-.container {
-  color: rgb(67, 194, 199);
-  width: 100%;
-  height: auto;
-  text-align: center;
-  display: grid;
-  overflow: auto;
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 .row {
-    padding: 10%;
-}
-
-.intro_container,
-.course_container,
-.work_container,
-.portfolio_container,
-.blog_container, #nav_container{
+  margin-top: 6%;
   width: 100%;
+  /* border: 1px solid red; */
 }
 
-#nav_container{
+#welcome_page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.377)),
+    url(https://github.com/danlee0528/danlee0528.github.io/blob/592ea3a15f25fd1a381ded2a7a5766456c507a8e/images/main-page-image.jpg?raw=true);
+  min-height: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header_name {
+  font-size: 80px;
+  display: inline;
+}
+
+#header_subtext {
+  font-size: 20px;
+  color: rgb(251, 255, 20);
+}
+
+.icons {
+  height: 60px;
+  width: 60px;
+}
+
+#menu_icon:hover {
+  cursor: default;
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out 0s;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
   text-align: center;
+  margin-top: 30px;
 }
 
-.intro_text {
-  padding-top: 5%;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
 }
 
-.intro_text2,
-.portfolio_info,
-.card-text {
-  color: rgb(144, 144, 144);
-}
-
-.courses,
-.quote,
-.job_title,
-.job_info_subheadings,
-.card-title {
-  color: rgb(228, 186, 51);
-}
-
-.myImage {
-  max-width: 40%;
-  border-radius: 50%;
-  border: 2px solid rgba(149, 149, 149, 0.4);
-}
-
-.top_btn_container {
-  display: none;
-  position: fixed;
-  bottom: 3%;
-  right: 4%;
-  width: 10px;
-  height: auto;
-}
-
-.icon_container {
-  display: none;
-  position: fixed;
-  bottom: 5.2%;
-  left: 1%;
-  width: 10px;
-  height: auto;
-}
-.icons,
-.top-btn {
-  padding-bottom: 10px;
-  opacity: 0.3;
-  color: white;
-}
-
-.dev_icon {
-  margin-left: -7px;
-  filter: invert(1);
-  opacity: 0.3;
-  background-color: transparent;
-}
-
-.icons:hover,
-.top-btn:hover,
-.dev_icon:hover {
-  opacity: 1;
-  transition: ease-in 0.5s;
-  cursor: pointer;
-}
-
-nav {
-  padding-top: 4%;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
-.nav_items {
-  opacity: 0.3;
-  color: white;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.nav_items:hover {
-  opacity: 1;
-  color: white;
-  transition: 0.5s ease-in;
+.overlay a:hover {
+  color: #f3d552;
+  font-size: 90px;
   text-decoration: none;
 }
 
-.main_header {
-  position: relative;
-  min-height: 500px;
-  padding-top: 40%;
-  padding-bottom: 50%;
-  width: 100%;
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
-.quote {
-  color: rgb(235, 209, 177);
-  font-size: xx-large;
-  font-style: italic;
-}
-
-.follow_text {
-  text-orientation: mixed;
-  writing-mode: vertical-rl;
-  color: white;
-  padding-bottom: 20px;
-  opacity: 0.3;
-  margin: -5px;
-  transform: rotate(180deg);
-}
-
-.on_text {
-  text-orientation: sideways;
-  writing-mode: horizontal-tb;
-  transform: rotate(-180deg);
-  color: white;
-}
-
-.course_container,
-.work_container,
-.blog_container,
-.portfolio_container {
-}
-
-.course_header {
-
-    padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.course_info,
-.job_info,
-.job_date {
-  color: rgb(144, 144, 144);
-}
-
-.course_info {
-  padding-bottom: 5%;
-}
-
-.company_name, .course_header {
-  color: rgb(255, 96, 81);
-}
-
-.carousel-inner img {
-  width: auto;
-  height: 370px;
-  max-height: 370px;
-}
-
-.carousel-itemm {
-  width: 100%;
-}
-
-.carousel-caption {
-  justify-content: center;
-  padding: 5%;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: beige;
-  border-radius: 10%;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(67, 194, 199);
-}
-
-footer {
-  padding: 2%;
-  width: 100%;
-  color: beige;
+.hero-text {
   text-align: center;
+  position: absolute;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }
 
-.portfolio_container {
-  display: grid;
-}
-
-#myBtnContainer{
-  margin-top: 2%;
-}
-
-
-.filterDiv {
-  display: none; /* Hidden by default */
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: 1px solid beige;
-  outline: none;
-  padding: 12px 16px;
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 10px;
+  border-radius: 15px 50px;
+  background-color: rgba(228, 59, 59, 0.815);
+  color: rgb(248, 248, 248);
+  text-align: center;
   cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-style: none;
+}
+
+#about_row .card {
+  width: 100%;
+  border: none;
+}
+
+#about_row .card-text {
+  font-family: "Open Sans", sans-serif;
+}
+
+#about_row .card-img {
+  padding-top: 6%;
+}
+
+.mediaIcons_container {
+  /* border: 1px solid grey; */
+  width: 100%;
+  display: block;
+  text-align: right;
+}
+
+.mediaIcons {
+  height: 50px;
+  padding: 1%;
+  opacity: 0.5;
+}
+
+.mediaIcons:hover {
+  opacity: 1;
+}
+
+#about_row_header,
+#work_row_header {
+  text-align: center;
+  width: 100%;
+  font-family: "Neucha", cursive;
+  padding: 4%;
+  border-bottom: 2px solid rgba(221, 221, 221, 0.548);
+}
+
+#work_row {
+  max-width: 100%;
+  height: auto;
+  /* border-top: 1px solid grey; */
+  padding-bottom: 3%;
+}
+
+#work_row > .row {
+  padding-bottom: 8%;
+}
+
+#work_row_header {
+  text-align: center;
+  width: 100%;
+  font-family: "Neucha", cursive;
+  padding: 4%;
+}
+
+#project_banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://github.com/danlee0528/danlee0528.github.io/blob/592ea3a15f25fd1a381ded2a7a5766456c507a8e/images/tech_background.png?raw=true);
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#project_banner > h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  font-family: "Shadows Into Light Two", cursive;
+  padding-top: 60px;
+}
+
+#project_row {
+  padding-top: 100px;
+  max-width: 100%;
+  height: auto;
+}
+
+#project_row .card-deck {
+  justify-content: center;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-row-gap: 20px;
+}
+
+.card-deck .card {
+  max-width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+#project_row .card-body {
+  height: auto;
+}
+
+#project_row .card-title {
+  font-size: 26px;
+  font-weight: bolder;
+  color: #555;
+  padding-top: 6%;
+  padding-bottom: 2%;
+}
+
+#project_row .card-text {
+  padding-top: 10%;
+  padding-bottom: 20%;
+  color: black;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+}
+
+.card .card-footer {
+  background-color: #fff;
+  /* border: 1px solid red; */
+  border: none;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+  position: absolute;
+}
+
+.card-footer > button:hover {
+  background-color: black;
   color: white;
 }
 
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  color: rgb(255, 96, 81);
+.languages {
+  background: rgba(0, 0, 0, 0.685);
+  color: white;
+  width: fit-content;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 50% 20% / 10% 40%;
 }
 
-/* Add a dark background to the active button */
-.btn.active {
-  color: rgb(255, 96, 81);
-  outline: none !important;
-  box-shadow: none !important;
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and down) */
+
+@media screen and (max-width: 575px) {
+  .row {
+    /* border: 2px solid green; */
+  }
+  #header_name {
+    /* color: yellow; */
+    font-size: 30px;
+  }
+  #header_subtext,
+  .hero-text {
+    font-size: 10px;
+  }
+  #about_row_header,
+  #work_row_header {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    font-family: "Neucha", cursive;
+    padding: 4%;
+  }
+  #me_image {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: -7%;
+    margin-bottom: 2%;
+  }
+  #about_row {
+    /* border: 2px solid black; */
+    margin-left: 1px;
+  }
+  #abour_row .card-text {
+    font-size: 10px;
+  }
+  .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  .overlay a:hover {
+    color: #f3d552;
+    font-size: 40px;
+    text-decoration: none;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+  }
+  #work_row {
+    margin-left: 1px;
+    /* border: 2px solid black; */
+  }
+  .main-timeline4:before {
+    margin-left: 12px;
+  }
+  #project_banner h1 {
+    font-size: 60px;
+  }
+  #project_row .card {
+    margin-left: 30px;
+    width: 340px;
+    height: auto;
+  }
+  #project_row .card-title {
+    font-size: 20px;
+  }
+  #project_row .card-text,
+  #project_row button,
+  .languages {
+    font-size: 12px;
+  }
 }
 
-.btn:focus{
-  outline: none !important;
-  box-shadow: none !important;
+/* Medium devices (tablets, 768px and down) The navbar toggle appears at this breakpoint */
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  #header_name {
+    /* color: orange; */
+    font-size: 40px;
+  }
+  #header_subtext,
+  .hero-text {
+    font-size: 13px;
+  }
+  #about_row_header,
+  #work_row_header {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: "Neucha", cursive;
+    padding: 4%;
+  }
+  #me_image {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: -7%;
+    margin-bottom: 2%;
+  }
+}
+
+/* Large devices (desktops, 992px and down) */
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  #header_name {
+    /* color: green; */
+    font-size: 51px;
+  }
+  #header_subtext,
+  .hero-text {
+    font-size: 16px;
+  }
+  #me_image {
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: -7%;
+    margin-bottom: 2%;
+  }
+  #about_row .card-title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and down) */
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  #header_name {
+    font-size: 60px;
+  }
+  #header_subtext,
+  .hero-text {
+    font-size: 18px;
+  }
+  .hero-text button {
+    padding: 6px 15px;
+  }
+  #me_image {
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: -7%;
+    margin-bottom: 2%;
+  }
+  AS #about_row .card-title {
+    font-size: 30px;
+    text-align: center;
+  }
 }
