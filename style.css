@@ -1,6 +1,11 @@
 *{
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
 }
 
 h1{
@@ -60,17 +65,17 @@ nav li{
   width: 33%;
 }
 
-.landing-content-container h1{
+.landing-content-container h1, .portfolio-texts-column h1{
   padding-bottom: 6%;
   font-size: 4em;
 }
 
-.landing-content-container p{
+.landing-content-container p, .portfolio-texts-column p{
   padding-top: 6%;
   padding-bottom: 6%;
 }
 
-.landing-content-container hr{
+hr{
   width: 5em;
   border: 1px solid #6454FA;
 }
@@ -126,6 +131,7 @@ nav li{
   text-align: left;
   line-height: 6em;
   max-width: 100%;
+  overflow-x: hidden;
   height: 100%;
   font-kerning: auto;
 }
@@ -192,4 +198,87 @@ nav li{
   background-size: cover;
   height: 100%;
 }
+
+
 /* Portfolio Section Styling */
+
+.portfolio-section-container{
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.portfolios-column{
+  padding-left: 5vw;
+  padding-top: 10vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  position: relative;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 60vw;
+  background-color: #FAFAFA;
+}
+
+.portfolio{
+  display: relative;
+  width: 500px;
+  height: 500px;
+  background-image: url(/images/portfolio_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio:nth-child(2n){
+  margin-top: 40%;
+}
+
+.portfolio-texts-column{
+  display: relative;
+  background-color: black;
+  height: 100vh;
+  right:0;
+  height: 100%;
+  position: relative;
+  justify-self: end;
+}
+
+.portfolio-texts-container{
+  padding-top: 30%;
+  padding-left: 20%;
+}
+
+.portfolio-texts-container hr{
+  border: 1px solid #6454FA;
+}
+
+.portfolio-texts-column h1{
+  font-size: 3em;
+  color: #FAFAFA;
+}
+
+.portfolio-texts-column p{
+  max-width: 80%;
+  color: #FAFAFA;
+}
+
+.contact-btn{
+  border: none;
+  background-color: #FAFAFA;
+  color: black;
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: center;
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-btn:hover{
+  background-color:#6454FA;
+  color: white;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
