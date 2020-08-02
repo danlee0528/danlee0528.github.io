@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap" rel="stylesheet">
-    <script async src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>about</li>
-            <li>portfolio</li>
-            <li>contact</li>
+    <nav id="navbar">
+        <ul class="navbar-ul">
+            <a href="#about-section"><li class="navbar-li">about</li></a>
+            <a href="#portfolio-section"><li class="navbar-li">portfolio</li></a>
         </ul>
     </nav>
     <!-- Landing Page -->
@@ -41,7 +41,7 @@
     </div>
 
     <!-- Second Page -->
-    <div class="pages">
+    <div class="pages" id="about-section">
             <h1 class="about-heading">About Me</h1>
             <div class="circle"></div>
             <p class="about-paragraph"><b>Hello World!</b> Yeah, that's the first line of code I've written like everyone
@@ -150,9 +150,7 @@
         </div>
     </div>
 
-
-
-    <div class="pages">
+    <div class="pages" id="portfolio-section">
         <div class="portfolio-section-container">
             <div class="portfolios-column">
                 <div class="portfolio">1</div>
@@ -174,16 +172,9 @@
                         interesting projects that need a partner? Feel free to contact me anytime!
                     </p>
                     <a href="mailto:hla191@sfu.ca"><input class="contact-btn"type="button" value="Contact Me"></input></a>
-                    <p><- scrollable!</p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
 </body>
-
-</html>`
+</html>
