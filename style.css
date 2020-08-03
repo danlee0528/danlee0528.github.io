@@ -20,7 +20,7 @@ nav{
   top: 0;
   text-align: right;
   width: 100%;
-  color: black;
+  color: #6F6F6F;
 }
 
 nav ul{
@@ -69,17 +69,17 @@ nav li:hover{
   left: 18vw;
   top: 26vh;
   z-index: 100;
-  width: 33%;
+  width: 33vw;
 }
 
 .landing-content-container h1, .portfolio-texts-column h1{
-  padding-bottom: 6%;
+  padding-bottom: 6vh;
   font-size: 4em;
 }
 
 .landing-content-container p, .portfolio-texts-column p{
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
 }
 
 hr{
@@ -88,10 +88,10 @@ hr{
 }
 
 .icon-container img{
-  height: 30px;
+  height: 3vh;
   width: auto;
   color: #6F6F6F;
-  padding-right: 2%;
+  padding-right: 0.5vw;
 }
 
 .icon-container img:hover{
@@ -103,38 +103,38 @@ hr{
   right:10vw;
   top: 60vh;
   position: absolute;
-  height: 60%;
+  height: 60vh;
 }
 
 /* Second Page Styling */
 
 .about-heading{
-  padding-top: 10%;
-  padding-left: 12%;
+  padding-top: 20vh;
+  padding-left: 13vw;
   font-size: 3em;
 }
 
 .about-paragraph{
-  border-left: 2px solid #6F6F6F;
   margin-top: 5%;
   padding-left: 3%;
-  margin-left: 26.5%;
-  max-width: 43%;
+  margin-left: 26.5vw;
+  max-width: 43vw;
   text-align: justify;
 }
 
 .circle{
-  width: 30px;
-  height: 30px;
+  width: 2vw;
+  height: 2vw;
   border-radius: 50%;
+  position: absolute;
   background-color: #6454FA;
-  margin-left: 26%;
-  margin-top: -1%;
+  margin-left: 26vw;
+  margin-top: 3vh;
 }
 
 .curriculums{
   background-color: rgba(0, 0, 0, 0.486);
-  margin-top: 20%;
+  margin-top: 20vh;
   text-align: left;
   line-height: 6em;
   max-width: 100%;
@@ -144,7 +144,7 @@ hr{
 }
 
 .curriculums p{
-  padding: 12%;
+  padding: 12vw;
   font-size: 6rem;
   color: #6F6F6F;
   font-style: italic;
@@ -158,14 +158,14 @@ hr{
 
 .service-cards-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 5%;
-  padding: 12%;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 1vw;
+  padding: 10vw;
 }
 
 .service-cards{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .service-cards-inner-heading-columns{
@@ -183,17 +183,16 @@ hr{
 
 
 .tech-stack-heading{
-  padding-top: 10%;
-  padding-left: 8.5%;
+  padding-top: 20vh;
+  padding-left: 13vw;
   font-size: 3em;
 }
 
 .tech-stack-paragraph{
-  border-left: 2px solid #6F6F6F;
   margin-top: 5%;
   padding-left: 3%;
-  margin-left: 26.5%;
-  max-width: 43%;
+  margin-left: 26.5vw;
+  max-width: 43vw;
   text-align: justify;
 }
 
@@ -215,7 +214,7 @@ hr{
 }
 
 .portfolios-column{
-  padding-left: 5vw;
+  padding-left: 8vw;
   padding-top: 12vh;
   display: grid;
   grid-template-columns: auto auto;
@@ -229,15 +228,15 @@ hr{
 
 .portfolio{
   display: relative;
-  width: 500px;
-  height: 500px;
+  width: 20vw;
+  height: 20vw;
   background-image: url(/images/portfolio_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .portfolio:nth-child(2n){
-  margin-top: 40%;
+  margin-top: 30vh;
 }
 
 .portfolio-texts-column{
@@ -251,8 +250,8 @@ hr{
 }
 
 .portfolio-texts-container{
-  padding-top: 60%;
-  padding-left: 20%;
+  padding-top: 42vh;
+  padding-left: 8vw;
 }
 
 .portfolio-texts-container hr{
@@ -277,8 +276,8 @@ hr{
   font-size: 1em;
   text-align: center;
   padding: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 1vw;
+  padding-right: 1vw;
   font-family: 'Raleway', sans-serif;
 }
 
