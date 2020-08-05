@@ -13,7 +13,7 @@ $(document).ready(function(){
           });
         }
         // First on About section and second on Portfolio Section
-        else if((scroll >= $(window).innerHeight() * 1 && scroll < $(window).innerHeight() * 2)|| (scroll >= $(window).innerHeight() * 4 && scroll < $(window).innerHeight() * 7)){
+        else if((scroll >= $(window).innerHeight() * 1 && scroll < $(window).innerHeight() * 2)|| (scroll >= $(window).innerHeight() * 4 && scroll < $(window).innerHeight() * 8)){
             $("#navbar").css({"background":"rgba(255, 255, 255, 0.6)","transition":"0.3s ease-in-out","box-shadow":"0 2px 2px -2px rgba(0,0,0,.2)"}); 
             $('.navbar-ul').css({"color":"#6F6F6F","padding":"2em","transition":"0.3s ease-in-out"});
             $('.navbar-li').css({"color":"#6F6F6F","padding-right":"5em","transition":"0.3s ease-in-out"});
@@ -34,4 +34,9 @@ $(document).ready(function(){
               });
         }
     })
+
+
+
+
+
   })

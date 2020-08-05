@@ -1,0 +1,336 @@
+@media (max-width: 767.97px) {
+    nav{
+        display: none;
+    }
+    
+    /* body{
+        border: 2px solid red;
+    } */
+
+      .landing-content-container{
+          position: absolute;
+          top: 26vh;
+          left:0;
+          z-index: 100;
+          padding-left: 14%;
+          width: 80%;
+        }
+        
+        .landing-content-container hr{
+             width: 4em;
+        }
+
+        .landing-content-container h1, .portfolio-texts-column h1{
+            padding-bottom: 6vh;
+            font-size: 3em;
+        }
+
+        .landing-image{
+            right:5vw;
+            top: 80vh;
+            position: absolute;
+            height: 40vh;
+          }
+    
+          .about-heading, .tech-stack-heading{
+            padding-top: 20vh;
+            padding-left: 5%;
+            font-size: 2em;
+          }
+          
+          .about-paragraph, .tech-stack-paragraph{
+            display: block;
+            width: 90%;
+            margin: 2%;
+            margin-top: 10%;
+            max-width: 90%;
+          }
+          
+          .circle{
+            display:none;
+          }
+          
+        .curriculums p{
+        font-size: 2rem;
+        }
+        
+
+    .service-cards-container{
+        margin-top: 20%;
+        grid-template-columns: repeat(1, auto);
+        row-gap: 5vh;
+        display: grid;
+        justify-items: center;
+      }
+
+      .service-cards{
+        display: grid;
+        overflow: hidden;
+        height: 25vh;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+      }
+
+
+      .service-cards-inner-heading-columns{
+        display: inline-block;
+        min-width: 38vw;
+        max-width: 38vw;
+        background-color: #FAFAFA;
+        max-width: auto;
+      }
+      
+      .service-cards-inner-list-columns {
+        max-width: 40vw;
+        justify-self: start;
+      }
+
+
+
+
+      .portfolio-section-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width:100%;
+        margin-top: 10vh;
+      }
+      
+      .portfolios-column{
+        grid-row:2;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        padding:0;
+        background-color: #FAFAFA;
+      }
+
+      .portfolios-column::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .portfolio, .portfolio img{
+        display: inline-block;
+        width: 100%;
+        height: 100vw;
+      }
+      
+      .portfolio:nth-child(2n){
+        margin-top: 0;
+      }
+      
+      .portfolio-texts-column{
+        display: relative;
+        grid-row:1;
+        background-color: black;
+        width: 100%;
+        position: relative;
+        justify-self: end;
+      }
+      
+      .portfolio-texts-container{
+        padding: 12vh;
+        padding-left: 12vw;
+      }
+      
+      .portfolio-texts-container hr{
+        border: 1px solid #6454FA;
+      }
+      
+      .portfolio-texts-column h1{
+        font-size: 3em;
+        color: #FAFAFA;
+      }
+      
+      .portfolio-texts-column p{
+        max-width: 100%;
+        text-align: justify;
+        color: #FAFAFA;
+      }
+      
+      .contact-btn{
+        padding: 2%;
+      }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) and (max-width: 1091.99px) {
+    /* body{
+        border: 5px solid blue;
+    } */
+
+    .landing-content-container{
+        position: absolute;
+        left: 18vw;
+        top: 26vh;
+        z-index: 100;
+        width: 40vw;
+      }
+
+    .landing-content-container h1, .portfolio-texts-column h1{
+        padding-bottom: 6vh;
+        font-size: 3em;
+      }
+
+      .landing-image{
+        right:5vw;
+        top: 80vh;
+        position: absolute;
+        height: 40vh;
+      }
+      
+            .curriculums p{
+              font-size: 3rem;
+            }
+
+      .service-cards-container{
+        grid-template-columns: repeat(2, auto);
+        row-gap: 5vh;
+        display: grid;
+        justify-items: center !important;
+      }
+
+      .service-cards{
+        display: grid;
+        overflow: hidden;
+        height: 25vh;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+      }
+
+      .service-cards-inner-heading-columns{
+        max-width: 16vw;
+        min-width: 16vw;
+      }
+      
+      .service-cards-inner-list-columns {
+        min-width: 13vw;
+        max-width: 13vw;
+      }
+
+
+      .portfolio-section-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width:100%;
+        margin-top: 10vh;
+      }
+      
+      .portfolios-column{
+        grid-row:2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding:0;
+        background-color: #FAFAFA;
+      }
+
+      .portfolios-column::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .portfolio, .portfolio img{
+        display: inline-block;
+        width: 100%;
+        height: 46vw;
+      }
+      
+      .portfolio:nth-child(2n){
+        margin-top: 0;
+      }
+      
+      .portfolio-texts-column{
+        display: relative;
+        grid-row:1;
+        background-color: black;
+        width: 100%;
+        position: relative;
+        justify-self: end;
+      }
+      
+      .portfolio-texts-container{
+        padding: 12vh;
+        padding-left: 8vw;
+      }
+      
+      .portfolio-texts-container hr{
+        border: 1px solid #6454FA;
+      }
+      
+      .portfolio-texts-column h1{
+        font-size: 3em;
+        color: #FAFAFA;
+      }
+      
+      .portfolio-texts-column p{
+        max-width: 80%;
+        color: #FAFAFA;
+      }
+      
+      .contact-btn{
+        padding: 1%;
+      }
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 1092px) and (max-width: 1284.99px) {
+    /* body{
+        border: 5px solid green;
+    } */
+
+    .portfolio, .portfolio img{
+        display: inline-block;
+        width: 100%;
+        height: 30vw;
+      }
+
+    .service-cards-container{
+        grid-template-columns: repeat(2, auto);
+        row-gap: 5vh;
+        justify-items: center;
+      }
+
+      .curriculums p{
+        font-size: 6rem;
+      }
+      
+      .service-cards{
+        display: grid;
+        overflow: hidden;
+        height: 26vh;
+        width: 28vw;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+      }
+      
+      .service-cards-inner-heading-columns{
+        max-width: 11vw;
+        min-width: 11vw;
+      }
+      
+      .service-cards-inner-list-columns {
+        min-width: 13vw;
+        max-width: 13vw;
+      }
+
+      .landing-image{
+        right:5vw;
+        top: 70vh;
+        position: absolute;
+        height: 50vh;
+      }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1285px) and (max-width: 1919px){
+    body{
+        border: none;
+    }
+}
+
+@media(min-width: 1920px){
+    body{
+        border: none;
+    }
+}

@@ -12,6 +12,7 @@ p, li{
   font-family: 'Raleway', sans-serif;
 }
 
+
 nav{
   display: block;
   position:fixed;
@@ -52,7 +53,7 @@ nav li:hover{
   margin-top: 100vh;
 }
 
-/* First Page Sytling */
+/* Landing Page Section ytling */
 
 .landing-grey-area{
   background-color: #FAFAFA;
@@ -106,7 +107,7 @@ hr{
   height: 60vh;
 }
 
-/* Second Page Styling */
+/* About Me Section Styling */
 
 .about-heading{
   padding-top: 20vh;
@@ -130,6 +131,16 @@ hr{
   background-color: #6454FA;
   margin-left: 26vw;
   margin-top: 3vh;
+}
+
+/* Curriculums Section Styling */
+.parallax{
+  background-image: url(images/5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .curriculums{
@@ -161,11 +172,16 @@ hr{
   grid-template-columns: repeat(4, auto);
   column-gap: 1vw;
   padding: 10vw;
+  height: 100%;
 }
 
 .service-cards{
   display: grid;
+  overflow: hidden;
+  height: 26vh;
+  width: 20vw;
   grid-template-columns: repeat(2,1fr);
+  justify-items: center;
 }
 
 .service-cards-inner-heading-columns{
@@ -174,11 +190,14 @@ hr{
   padding: 1em;
   text-align: left;
   display: inline-block;
+  min-width: 8vw;
+  max-width: auto;
 }
 
 .service-cards-inner-list-columns {
   display: inline-block;
   padding-top: 5em;
+  max-width: 10vw;
 }
 
 
@@ -196,15 +215,6 @@ hr{
   text-align: justify;
 }
 
-.parallax{
-  background-image: url(images/5.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-}
-
 
 /* Portfolio Section Styling */
 
@@ -214,8 +224,6 @@ hr{
 }
 
 .portfolios-column{
-  padding-left: 8vw;
-  padding-top: 12vh;
   display: grid;
   grid-template-columns: auto auto;
   text-align: center;
@@ -226,19 +234,12 @@ hr{
   background-color: #FAFAFA;
 }
 
-.portfolio{
-  display: relative;
-  width: 20vw;
-  height: 20vw;
-  background-image: url(/images/portfolio_image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.portfolio, .portfolio img{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 26vw;
 }
-
-.portfolio:nth-child(2n){
-  margin-top: 30vh;
-}
-
 .portfolio-texts-column{
   display: relative;
   background-color: black;
@@ -268,6 +269,17 @@ hr{
   color: #FAFAFA;
 }
 
+.portfolio a{
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #FAFAFA;
+}
+
+.portfolio a:hover{
+  color: #6454FA;
+  
+}
 .contact-btn{
   border: none;
   background-color: #FAFAFA;
@@ -286,4 +298,32 @@ hr{
   color: white;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+}
+
+
+.overlay {
+  position: absolute;
+  height: inherit;
+  z-index: 100;
+  min-width: 100%;
+  left: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.portfolio:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
