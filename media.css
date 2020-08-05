@@ -49,11 +49,10 @@
           .circle{
             display:none;
           }
-          
-        .curriculums p{
-        font-size: 2rem;
-        }
-        
+          .curriculums p{
+            font-size: 2rem;
+            line-height: 1em;
+          }
 
     .service-cards-container{
         margin-top: 20%;
@@ -85,9 +84,6 @@
         max-width: 40vw;
         justify-self: start;
       }
-
-
-
 
       .portfolio-section-container{
         display: grid;
@@ -179,9 +175,11 @@
         height: 40vh;
       }
       
-            .curriculums p{
-              font-size: 3rem;
-            }
+      .curriculums p{
+        font-size: 3rem;
+        
+  line-height: 1em;
+      }
 
       .service-cards-container{
         grid-template-columns: repeat(2, auto);
@@ -293,6 +291,8 @@
 
       .curriculums p{
         font-size: 6rem;
+        
+  line-height: 1em;
       }
       
       .service-cards{

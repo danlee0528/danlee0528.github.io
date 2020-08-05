@@ -61,6 +61,7 @@ nav li:hover{
   height: 100vh;
   left:0;
   top: 0;
+  display: none;
   position: absolute;
   z-index: -100;
 }
@@ -71,6 +72,7 @@ nav li:hover{
   top: 26vh;
   z-index: 100;
   width: 33vw;
+  opacity: 0;
 }
 
 .landing-content-container h1, .portfolio-texts-column h1{
@@ -105,6 +107,7 @@ hr{
   top: 60vh;
   position: absolute;
   height: 60vh;
+  display:none;
 }
 
 /* About Me Section Styling */
@@ -144,7 +147,7 @@ hr{
 }
 
 .curriculums{
-  background-color: rgba(0, 0, 0, 0.486);
+  background-color: rgba(0, 0, 0, 0.801);
   margin-top: 20vh;
   text-align: left;
   line-height: 6em;
@@ -157,12 +160,13 @@ hr{
 .curriculums p{
   padding: 12vw;
   font-size: 6rem;
-  color: #6F6F6F;
+  color: rgba(0, 0, 0, 0.137);
   font-style: italic;
 }
 
-.curriculums b{
-  color: #FAFAFA;
+.curriculums b:hover{
+  color: #fafafac2;
+  transition: 0.8s ease-in-out;
 }
 
 /* Tech Stack SectionStyling */
@@ -251,7 +255,7 @@ hr{
 }
 
 .portfolio-texts-container{
-  padding-top: 42vh;
+  padding-top: 30vh;
   padding-left: 8vw;
 }
 

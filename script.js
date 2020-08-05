@@ -1,4 +1,23 @@
+
 $(document).ready(function(){
+  $(".landing-grey-area").animate({height: 'show'}, 1000);
+  $(".landing-content-container").delay(1000).animate({opacity: "1"}, 1500);
+  $(".landing-image").delay(1500).show("slow");
+
+  $(".parallax").ripples({
+    resolution: 300,
+    perturbance: .05,
+  });
+
+
+
+
+
+
+
+
+
+
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
     //   On Curriculum Section
@@ -34,9 +53,4 @@ $(document).ready(function(){
               });
         }
     })
-
-
-
-
-
   })
