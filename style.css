@@ -126,7 +126,7 @@ hr{
   padding-left: 3%;
   margin-left: 26.5vw;
   max-width: 43vw;
-  text-align: justify;
+  text-align: left;
 }
 
 .circle{
@@ -185,7 +185,7 @@ hr{
 .service-cards{
   display: grid;
   overflow: hidden;
-  height: 26vh;
+  min-height: 26vh;
   width: 20vw;
   grid-template-columns: repeat(2,1fr);
   justify-items: center;
@@ -219,7 +219,7 @@ hr{
   padding-left: 3%;
   margin-left: 26.5vw;
   max-width: 43vw;
-  text-align: justify;
+  text-align: left;
 }
 
 

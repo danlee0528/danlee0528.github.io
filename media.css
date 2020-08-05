@@ -65,7 +65,7 @@
       .service-cards{
         display: grid;
         overflow: hidden;
-        height: 25vh;
+        min-height: 25vh;
         width: 100%;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto;
@@ -151,9 +151,9 @@
 
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 767.98px) and (max-width: 1091.99px) {
-    /* body{
+    body{
         border: 5px solid blue;
-    } */
+    }
 
     .landing-content-container{
         position: absolute;
@@ -183,7 +183,7 @@
 
       .service-cards-container{
         grid-template-columns: repeat(2, auto);
-        row-gap: 5vh;
+        row-gap: 8vh;
         display: grid;
         justify-items: center !important;
       }
@@ -191,7 +191,8 @@
       .service-cards{
         display: grid;
         overflow: hidden;
-        height: 25vh;
+        min-height: 24vw;
+        max-height: 40vw;
         width: 100%;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto;
@@ -298,7 +299,7 @@
       .service-cards{
         display: grid;
         overflow: hidden;
-        height: 26vh;
+        min-height: 21vw;
         width: 28vw;
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
