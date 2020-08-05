@@ -12,6 +12,9 @@ p, li{
   font-family: 'Raleway', sans-serif;
 }
 
+a{
+  color: inherit;
+}
 
 nav{
   display: block;
