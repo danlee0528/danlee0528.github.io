@@ -33,11 +33,13 @@
           }
     
           .about-heading, .tech-stack-heading{
-            padding-top: 20vh;
+            padding-top: 40vw;
             padding-left: 5%;
             font-size: 2em;
           }
-          
+          .tech-stack-heading{
+            padding-top: 30vw;
+          }
           .about-paragraph, .tech-stack-paragraph{
             display: block;
             width: 90%;
@@ -76,8 +78,8 @@
         display: inline-block;
         min-width: 38vw;
         max-width: 38vw;
+        min-height: 38vw;
         background-color: #FAFAFA;
-        max-width: auto;
       }
       
       .service-cards-inner-list-columns {

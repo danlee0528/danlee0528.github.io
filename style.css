@@ -178,7 +178,7 @@ hr{
   display: grid;
   grid-template-columns: repeat(4, auto);
   column-gap: 1vw;
-  padding: 10vw;
+  padding: 8vw;
   height: 100%;
 }
 
@@ -207,6 +207,9 @@ hr{
   max-width: 10vw;
 }
 
+.service-cards-inner-list-columns li{
+  list-style: none;
+}
 
 .tech-stack-heading{
   padding-top: 20vh;
