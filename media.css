@@ -1,3 +1,9 @@
+@media (max-width:550px){
+  .landing-image{
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 767.97px) {
     nav{
         display: none;
@@ -27,7 +33,7 @@
 
         .landing-image{
             right:5vw;
-            top: 80vh;
+            top: 80%;
             position: absolute;
             height: 40vh;
           }
@@ -172,7 +178,7 @@
 
       .landing-image{
         right:5vw;
-        top: 80vh;
+        top: 80%;
         position: absolute;
         height: 40vh;
       }
@@ -319,7 +325,7 @@
 
       .landing-image{
         right:5vw;
-        top: 70vh;
+        top: 80%;
         position: absolute;
         height: 50vh;
       }

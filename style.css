@@ -106,11 +106,11 @@ hr{
 }
 
 .landing-image{
-  right:10vw;
-  top: 60vh;
+  right:0;
+  top: 68%;
+  right: 10vw;
   position: absolute;
   height: 60vh;
-  display:none;
 }
 
 /* About Me Section Styling */
