@@ -9,15 +9,6 @@ $(document).ready(function(){
     perturbance: .05,
   });
 
-
-
-
-
-
-
-
-
-
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
     //   On Curriculum Section

@@ -129,6 +129,10 @@ hr{
   text-align: left;
 }
 
+.about-paragraph h2{
+  font-family: 'Abril Fatface', cursive;
+}
+
 .circle{
   width: 2vw;
   height: 2vw;
