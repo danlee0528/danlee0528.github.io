@@ -2,14 +2,51 @@
   .landing-image{
     visibility: hidden;
   }
-      nav{
-        display: none;
-    }
+  nav{
+    display: none;
+}
+nav ul{
+  display: none;
+}
+    .service-cards-container{
+        margin-top: 20%;
+        grid-template-columns: repeat(1, auto);
+        row-gap: 5vh;
+        display: grid;
+        justify-items: center;
+      }
+
+      .service-cards{
+        display: grid;
+        overflow: hidden;
+        min-height: 25vh;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+      }
+
+
+      .service-cards-inner-heading-columns{
+        display: inline-block;
+        min-width: 38vw;
+        max-width: 38vw;
+        height: 52vw;
+        background-color: #FAFAFA;
+      }
+      
+      .service-cards-inner-list-columns {
+        max-width: 40vw;
+        justify-self: start;
+      }
+
 }
 
 @media (max-width: 767.97px) {
     nav{
         display: none;
+    }
+    nav ul{
+      display: none;
     }
     
     /* body{

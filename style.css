@@ -88,6 +88,7 @@ nav li:hover{
   padding-bottom: 6vh;
 }
 
+
 hr{
   width: 5em;
   border: 1px solid #6454FA;
@@ -154,7 +155,7 @@ hr{
 }
 
 .curriculums{
-  background-color: rgba(0, 0, 0, 0.801);
+  background-color: rgba(0, 0, 0, 0.205);
   margin-top: 20vh;
   text-align: left;
   line-height: 6em;
@@ -165,9 +166,9 @@ hr{
 }
 
 .curriculums p{
-  padding: 12vw;
-  font-size: 6rem;
-  color: rgba(0, 0, 0, 0.137);
+  padding: 8vw;
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.158);
   font-style: italic;
 }
 
@@ -261,7 +262,7 @@ hr{
   right:0;
   height: 100%;
   position: relative;
-  justify-self: end;
+  justify-self: left;
 }
 
 .portfolio-texts-container{
@@ -274,7 +275,7 @@ hr{
 }
 
 .portfolio-texts-column h1{
-  font-size: 3em;
+  font-size: 2em;
   color: #FAFAFA;
 }
 
