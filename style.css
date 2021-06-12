@@ -154,6 +154,11 @@ html {
   opacity: 1;
 }
 
+#intro_paragraph{
+  font-family: 'Mate SC', serif;
+  font-size: 20px;
+}
+
 #about_row_header,
 #work_row_header {
   text-align: center;
