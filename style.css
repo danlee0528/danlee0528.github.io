@@ -17,18 +17,17 @@ html {
   /* border: 1px solid red; */
 }
 
-#welcome_page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.377)),
-    url(/images/main-page-image.jpeg);
-  min-height: 100%;
-  height: auto;
-  max-width: 100%;
-  margin: 0;
+#welcome_page{
   position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#landing_page_image{
+  height: 100%;
+  width: 100%;
 }
 
 #header_name {
