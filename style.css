@@ -185,7 +185,7 @@ html {
   padding: 4%;
 }
 
-#project_banner {
+#programming_project_banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/tech_background.png);
   height: 200px;
@@ -195,7 +195,17 @@ html {
   background-size: cover;
 }
 
-#project_banner > h1 {
+#design_project_banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/design_background.jpeg);
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#programming_project_banner > h1, #design_project_banner > h1 {
   color: white;
   font-size: 80px;
   text-align: center;
@@ -346,7 +356,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .main-timeline4:before {
     margin-left: 12px;
   }
-  #project_banner h1 {
+  #design_project_banner h1, #programming_project_banner h1 {
     font-size: 60px;
   }
   #project_row .card {
